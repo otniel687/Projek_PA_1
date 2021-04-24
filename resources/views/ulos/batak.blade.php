@@ -153,8 +153,6 @@
     @endsection   
     <!--Akhir Content-->
 
-    
-
     <!--Video -->
     @section('video')
         <section id="video">
@@ -166,7 +164,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
           <div class="col">
-            <video controls>
+            <video controls class="rounded mx-auto d-block">
               <source src="{{asset('video/ulos_batak.mp4')}}" type="video/mp4" />
             </video>
           </div>
