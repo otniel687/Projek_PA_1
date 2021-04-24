@@ -185,7 +185,7 @@
                   <h5><b> Nama:</b> </h5><p>Ratna Sijabat</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* -</li>
+                      <li>-</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -252,7 +252,7 @@
                   <h5><b> Nama:</b> </h5><p> Desnita Novita Sari Simarmata</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 083131923316</li>
+                      <li>083131923316</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -319,7 +319,7 @@
                   <h5><b> Nama:</b> </h5><p>Linda Sinurat</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 083131923316</li>
+                      <li>083131923316</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -386,7 +386,7 @@
                   <h5><b> Nama:</b> </h5><p>Sostiwuana Sinaga</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 082370594016</li>
+                      <li>082370594016</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -453,7 +453,7 @@
                   <h5><b> Nama:</b> </h5><p>Masita Simarmata</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 082167411136</li>
+                      <li>082167411136</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -520,7 +520,7 @@
                   <h5><b> Nama:</b> </h5><p>Sonta Situmorang</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 082167411136</li>
+                      <li>082167411136</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -587,7 +587,7 @@
                   <h5><b> Nama:</b> </h5><p>Romula Situmorang</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 081919931339</li>
+                      <li>081919931339</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
@@ -654,7 +654,7 @@
                   <h5><b> Nama:</b> </h5><p>Monika Situmorang</p>
                   <h5><b> Contact Person : </b></h5> 
                     <p><ul>
-                      <li>* 087893728571</li>
+                      <li>087893728571</li>
                   </ul></p>
                   <h5><b> Lokasi: </b></h5><p> Desa Lumban Suhi Toruan, Hutaraja </p>
                   <h5><b>Ulos yang dapat di buat:</b> </h5>
