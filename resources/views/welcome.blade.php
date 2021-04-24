@@ -31,8 +31,8 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
-          <h1>Welcome to <span>Ulos Desa Suhisuhi</span></h1>
-          <h2>Who Will The First Ulos Desa Suhi Suhi !</h2>
+          <h1>Horas ! Welcome to  <span> Website Desa Suhisuhi</span></h1>
+          <h2>Beautiful Ulos From A Great Village </h2>
         </div>
       </div>
     </div>
