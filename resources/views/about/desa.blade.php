@@ -290,14 +290,14 @@
     <!--Video -->
     <section id="video">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col">
             <h2 class="text-center">Video</h2>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
           <div class="col">
-            <video width="400" height="280" controls>
+            <video controls class="rounded mx-auto d-block">
               <source src="video/desa.mp4" type="video/mp4" />
             </video>
           </div>
@@ -318,7 +318,7 @@
               </p> 
             </div>
 
-            <div class="referens col-md-6 col-sm-6 col-xs-12">
+            <div class="referens col-md-6 col-sm-6 col-xs-12 mb-4">
               <h2>Link Terkait</h2>
               <a href="https://samosirkab.go.id/">Pemerintah Kabupaten Samosir</a><br>
               <a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a><br>
