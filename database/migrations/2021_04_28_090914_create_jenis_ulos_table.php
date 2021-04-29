@@ -17,7 +17,7 @@ class CreateJenisUlosTable extends Migration
             $table->increments('id');
             $table->string('id_jenis');
             $table->string('nama');
-            $table->string('deskripsi',100);
+            $table->string('deskripsi',500);
             $table->string('harga');
             $table->string('gambar')->nullable();
             $table->timestamps();

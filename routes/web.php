@@ -53,9 +53,7 @@ Route::get('/jenis/hapus/{id}', 'App\Http\Controllers\JenisController@destroy');
 //pengguna
 Route::get('/kritiksaran', 'App\Http\Controllers\KritikController@index');
 Route::get('/kritiksaran/hapus/{id}', 'App\Http\Controllers\KritikController@destroy');
-=======
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 
