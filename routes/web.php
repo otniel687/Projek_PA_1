@@ -34,10 +34,6 @@ Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@buat');
 Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');
 Route::get('/login','App\Http\Controllers\login\LoginController@index')->name('login');
 
-//login admin
-Route::get('/loginadmin', 'App\Http\Controllers\login\LoginController@buat');
-Route::post('/','login\LoginController@login')->name('login');
-
 //halaman login
 Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@index');
 Route::get('/pengrajin/ubah/{id}', 'App\Http\Controllers\PengrajinController@edit');

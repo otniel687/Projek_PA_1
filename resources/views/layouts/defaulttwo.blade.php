@@ -46,7 +46,7 @@
                 <a class="nav-link" href="{{url('/pengrajin')}} ">Tentang Pengerajin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item btn btn-primary tombol" href="/loginadmin">Login</a>
+                <a class="nav-item btn btn-primary tombol" href="/login">Login</a>
               </li>
             </ul>
           </div>

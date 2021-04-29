@@ -21,7 +21,7 @@
   <title>@yield('title')</title>
   <style>
     h1{
-      color:black;
+      color:whitesmoke;
     }
   </style>
   </head>

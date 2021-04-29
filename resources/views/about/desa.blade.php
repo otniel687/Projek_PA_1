@@ -49,7 +49,7 @@
                 <a class="nav-link" href="{{asset('/pengrajin')}} ">Tentang Pengerajin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item btn btn-primary tombol" href="login.html">Login</a>
+                <a class="nav-item btn btn-primary tombol" href="/login">Login</a>
               </li>
             </ul>
           </div>
