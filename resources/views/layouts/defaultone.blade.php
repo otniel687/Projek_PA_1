@@ -34,8 +34,8 @@
               <span class="tab"></span> Website ini  bertujuan untuk Mempromosikan Desa dan Pariwisata Desa Lumban Gaol. <br><br>
               </p> 
             </div>
-            
-            <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <div class="referens col-md-6 col-sm-6 col-xs-12 mb-4">
               <h2>Link Terkait</h2>
               <a href="https://samosirkab.go.id/">Pemerintah Kabupaten Samosir</a><br>
               <a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a><br>

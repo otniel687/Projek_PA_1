@@ -290,14 +290,14 @@
     <!--Video -->
     <section id="video">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col">
             <h2 class="text-center">Video</h2>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
           <div class="col">
-            <video width="400" height="280" controls>
+            <video controls class="rounded mx-auto d-block">
               <source src="video/desa.mp4" type="video/mp4" />
             </video>
           </div>
@@ -307,22 +307,30 @@
     <!--Akhir Video-->
 
     <!--Footer-->
-    <section id="footer" class="bg-dark text-light">
+   <section id="footer" class="bg-dark text-light">
       <div class="container">
 
           <div class="row mt-5 ">
             <div class="col-md-3 col-sm-6 col-xs-12">
-              <h2>Desa Suhisuhi</h2> 
+              <h2>Desa Suhisuhi</h2>
+              <p>
+              <span class="tab"></span> Website ini  bertujuan untuk Mempromosikan Desa dan Pariwisata Desa Lumban Gaol. <br><br>
+              </p> 
             </div>
-            
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              
+
+            <div class="referens col-md-6 col-sm-6 col-xs-12 mb-4">
+              <h2>Link Terkait</h2>
+              <a href="https://samosirkab.go.id/">Pemerintah Kabupaten Samosir</a><br>
+              <a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a><br>
+              <a href="https://www.kemenparekraf.go.id/">Kementrian Parawisata dan Ekonomi Kreatif RI</a><br>
+              <a href="https://www.del.ac.id/">IT Del</a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5">
               <a href="" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-              <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></i></a>
+              <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+              <a class="social mt-5" href="" target="_blank"><i class="bi bi-telegram"></i></a>
             </div>
           </div>
       </div>

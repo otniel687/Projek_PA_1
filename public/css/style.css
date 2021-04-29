@@ -30,9 +30,12 @@ textarea {
 #footer {
     padding-top: 1rem;
 }
-#footer a i {
-    padding-top: 10rem;
+
+#footer .referens a {
+    text-decoration: none;
+    color: #5a6cbf;
 }
+
 #content_ulos {
     padding-top: 4rem;
 }
@@ -563,24 +566,24 @@ a i {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery .gallery-item {
-    overflow: hidden;
+/* .gallery .gallery-item {
+  overflow: hidden;
 }
 
 .gallery .gallery-item img {
-    transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
 }
 
 .gallery .gallery-item:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media (max-width: 992px) {
-    .book-a-table-btn {
-        margin: 0 15px 0 0;
-        padding: 8px 20px;
-    }
-}
+  .book-a-table-btn {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+  }
+} */
 
 .wrapper {
     max-width: 1100px;
