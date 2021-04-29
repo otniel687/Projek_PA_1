@@ -29,3 +29,27 @@ Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
 Route::get('/ulos/karo', 'App\Http\Controllers\UlosController@karo');
 Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
 Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@buat');
+
+//login
+Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');
+Route::get('/login','App\Http\Controllers\login\LoginController@index')->name('login');
+
+//login admin
+Route::get('/loginadmin', 'App\Http\Controllers\login\LoginController@buat');
+Route::post('/','login\LoginController@login')->name('login');
+
+//halaman login
+Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@index');
+Route::get('/pengrajin/ubah/{id}', 'App\Http\Controllers\PengrajinController@edit');
+Route::post('/pengrajin/update/{id}', 'App\Http\Controllers\PengrajinController@update');
+Route::get('/pengrajin/hapus/{id}', 'App\Http\Controllers\PengrajinController@destroy');
+
+//Produk
+Route::get('/jenis', 'App\Http\Controllers\JenisController@index');
+Route::get('/jenis/ubah/{id}', 'App\Http\Controllers\JenisController@edit');
+Route::post('/jenis/update/{id}', 'App\Http\Controllers\JenisController@update');
+Route::get('/jenis/hapus/{id}', 'App\Http\Controllers\JenisController@destroy');
+
+//pengguna
+Route::get('/kritiksaran', 'App\Http\Controllers\KritikController@index');
+Route::get('/kritiksaran/hapus/{id}', 'App\Http\Controllers\KritikController@destroy');
