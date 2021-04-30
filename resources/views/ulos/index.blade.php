@@ -309,7 +309,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
               <h2>Desa Suhisuhi</h2>
               <p>
-              <span class="tab"></span> Website ini  bertujuan untuk Mempromosikan Desa dan Pariwisata Desa Lumban Gaol. <br><br>
+              <span class="tab"></span> Website ini  bertujuan untuk Mempromosikan Desa dan UMKM Desa Suhisuhi. <br><br>
               </p> 
             </div>
 
