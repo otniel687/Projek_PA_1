@@ -28,7 +28,7 @@ Route::get('/ulos', 'App\Http\Controllers\UlosController@ulos');
 Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
 Route::get('/ulos/karo', 'App\Http\Controllers\UlosController@karo');
 Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
-Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@buat');
+Route::get('/halamanpengrajin', 'App\Http\Controllers\HalamanpengrajinController@index');
 
 //login
 Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');
