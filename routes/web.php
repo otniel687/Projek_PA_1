@@ -29,10 +29,16 @@ Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
 Route::get('/ulos/karo', 'App\Http\Controllers\UlosController@karo');
 Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
 Route::get('/halamanpengrajin', 'App\Http\Controllers\HalamanpengrajinController@index');
+Route::get('/kritik', 'App\Http\Controllers\KritikController@tampil');
+Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
+
+
 
 //login
 Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');
 Route::get('/login','App\Http\Controllers\login\LoginController@index')->name('login');
+Route::group(['middleware' => 'auth'], function(){
+Route::get('logout', 'App\Http\Controllers\login\LoginController@logout')->name('logout');
 
 //halaman login
 Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@index');
@@ -49,7 +55,4 @@ Route::get('/jenis/hapus/{id}', 'App\Http\Controllers\JenisController@destroy');
 //pengguna
 Route::get('/kritiksaran', 'App\Http\Controllers\KritikController@index');
 Route::get('/kritiksaran/hapus/{id}', 'App\Http\Controllers\KritikController@destroy');
-
-
-
-
+});

@@ -39,18 +39,18 @@
                 <a class="nav-link active" aria-current="page" href="/kritiksaran">Kritik dan Saran</a>
             </div>
             </div>
+            <div class="navbar2">
+            <div class="d-flex">
+            <h5><i class="fas fa-user-circle"></i> {{ Auth::user()->name }};<a href="{{ route('logout') }}" class="btn btn-danger btn-sm"><i class="fas fa-sign-out-alt"></i> Logout</a> </h5>
+            </div>
+            </div>
         </div>
     </nav>
 
     @yield('container')
 
     <br><br>
-    <br><br>
-    <footer class="bg-dark fixed-bottom">
-    <div class="p-2">
-        <h6 class="text-center text-light"><b class="text-primary">Desa Lumban Suhi-Suhi Copyright</b>&copy; Website UMKM ULos By <b class="text-warning">Kelompok 1</b></h6>
-    </div>
-    </footer>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

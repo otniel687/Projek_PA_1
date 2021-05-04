@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class KritikController extends Controller
 {
+    public function tampil()
+    {
+        return view('KritikSaran');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -37,6 +42,13 @@ class KritikController extends Controller
     public function store(Request $request)
     {
         //
+        Pengguna::create([
+            'nama' => $request->nama,
+            'kritik' => $request->kritik,
+            'saran' => $request->saran
+        ]);
+
+        return redirect('/');
     }
 
     /**

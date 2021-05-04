@@ -16,9 +16,9 @@ class LoginController extends Controller
 
     public function login(Request $request){
         if (Auth::attempt(['email'=>$request->email,'password'=>$request->password])) {
-            return redirect('/');
+            return redirect('/pengrajin');
         }
-           return redirect('/loginadmin')->with('message','Email atau Password Salah');
+           return redirect('/login')->with('message','Email atau Password Salah');
     }
 
     public function logout(Request $request){

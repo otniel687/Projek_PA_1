@@ -43,7 +43,7 @@
               <a href="https://www.del.ac.id/">IT Del</a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5">
-              <a href="" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
+              <a href="/kritik" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>

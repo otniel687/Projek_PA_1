@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <img src="{{asset('css/image/logo.png')}} " class="rounded-circle" style="width: 30px;" alt="">
+          <img src="{{asset('css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
           <h3 class="navbar-brand" href="#">DESA SUHISUHI</h3>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,11 +46,12 @@
                 <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengerajin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item btn btn-primary tombol" href="/login">Login</a>
+                <a class="nav-item btn btn-info tombol" href="/login">Login Admin</a>
               </li>
             </ul>
           </div>
         </div>
+        <br>
       </nav>
     </header>
     <!--Akhir Navbar-->
@@ -96,7 +97,7 @@
               <a href="https://www.del.ac.id/">IT Del</a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 mb-5">
-              <a href="" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
+              <a href="/kritik" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>

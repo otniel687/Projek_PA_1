@@ -17,7 +17,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/">Kembali</a>
+                <a class="nav-link active" aria-current="page" href="/">Beranda</a>
             </div>
             </div>
         </div>
@@ -29,7 +29,8 @@
         <h2><i class="fas fa-user"></i>&nbsp;&nbsp;<b class="title" style="color: navy;">Login Admin</b></h2>
         <hr>
         </center><br>
-    <form class="form container" action="">
+    <form class="form container" method="post" action="{{route('login')}}">
+    @csrf
         <div class="loginbody">
         <label for="username">Username</label>
         <input id="username" class="form-control border-top-0" type="email" name="email"><br>

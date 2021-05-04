@@ -20,11 +20,18 @@
 
 <!--Pengerajin -->
 @section('content')
+<style>
+  h1,p {
+    font-family: 'New Tegomin', serif;
+  }
+</style>
     <section id="galery" class="galery">
   <div class="row">
-    <div class="col">
-      <h3 class="text-center">Tentang Pengerajin</h3>
-    </div>
+  <br>
+  <center>
+  <i class="fas fa-user-friends"></i>
+  <p><a href="/join">Join Us</a></p>
+  </center>
   </div>
         <div class="container marketing">
           <!-- Three columns of text below the carousel -->
