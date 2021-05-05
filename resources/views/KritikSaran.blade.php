@@ -118,6 +118,7 @@
           <div class="col-md-12">
           </div>
           <div>
+          <br>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
                     <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
@@ -127,13 +128,15 @@
                     <img alt="Logo Desa Suhi-Suhi" width="60" src="img/logo2.png">
                 </a>
             </div>
+            <br>
+            <font size='2'>
             <p class="stext-107 cl6 txt-center">
-                Copyright &copy;<script>
+                Copyright &copy;
+                <script>
                     document.write(new Date().getFullYear());
-
                 </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
-                
             </p>
+            </font>
         </div>
       </div>
     </footer>
