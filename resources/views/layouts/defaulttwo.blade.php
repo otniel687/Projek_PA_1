@@ -78,35 +78,63 @@
     <!--Akhir Video-->
 
      <!--Footer-->
-    <section id="footer" class="bg-dark text-light">
-      <div class="container">
-
-          <div class="row mt-5 ">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h2>Desa Suhisuhi</h2>
-              <p>
-              <span class="tab"></span> Website ini  bertujuan untuk Mempromosikan Desa dan UMKM Desa Suhisuhi. <br><br>
-              </p> 
+     <section id="footer" class="bg-dark text-light">
+      <div>
+        <br> <br>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive; color: cornflowerblue; size:'7';">
+              <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village - since 2021!</p></font>
+            </div>
+            <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
+            <div class="col-md-1"></div>
+            <div class="col-md-2" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive;">
+              
+              <div class="referens">
+              <h5>Link Terkait</h5><br>
+              <p href="https://samosirkab.go.id/">Pemkab Samosir</p>
+              <p href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</p>
+              <p href="https://www.kemenparekraf.go.id/">kemenparekraf RI</p>
+              <p href="https://www.del.ac.id/">IT Del</p>
             </div>
 
-            <div class="referens col-md-6 col-sm-6 col-xs-12 mb-4">
-              <h2>Link Terkait</h2>
-              <a href="https://samosirkab.go.id/">Pemerintah Kabupaten Samosir</a><br>
-              <a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a><br>
-              <a href="https://www.kemenparekraf.go.id/">Kementrian Parawisata dan Ekonomi Kreatif RI</a><br>
-              <a href="https://www.del.ac.id/">IT Del</a>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 mb-5">
-              <a href="/kritik" class="btn btn-secondary" style="width: 250px;">Kritik Dan Saran</a><br>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <a href="/kritik" class="btn btn-warning" style="width: 250px;">Kritik Dan Saran</a><br>
+              <br>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
               <a class="social mt-5" href="" target="_blank"><i class="bi bi-telegram"></i></a>
             </div>
           </div>
-      </div>
-     
-    </section>
+        </div>
+    <br><br><br>
+    <center>
+    <footer>           
+    <div>
+            <div class="flex-c-m flex-w p-b-18">
+                <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
+                    <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/" class="m-all-1">
+                    <img alt="Logo Desa Suhi-Suhi" width="60" src="img/logo2.png">
+                </a>
+            </div>
+            <br>
+            <font size='2'>
+            <p class="stext-107 cl6 txt-center">
+                Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+            </p>
+            </font>
+        </div>
+    </footer>
+    </center>
     <!--Akhir Footer-->
     
     <script src="{{asset('js/bootstrap.bundle.min.js')}} "></script>
