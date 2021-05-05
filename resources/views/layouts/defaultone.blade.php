@@ -41,10 +41,10 @@
             <div class="col-md-3">
               <a href="/kritik" class="btn btn-warning" style="width: 250px;">Kritik Dan Saran</a><br>
               <br>
-              <a class="social mt-5" href="" target="_blank"><i class="bi bi-facebook m-3"></i></a>
+              <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-              <a class="social mt-5" href="" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-              <a class="social mt-5" href="" target="_blank"><i class="bi bi-telegram"></i></a>
+              <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+              <a class="social mt-5" href="https://web.telegram.org/" target="_blank"><i class="bi bi-telegram"></i></a>
             </div>
           </div>
         </div>
