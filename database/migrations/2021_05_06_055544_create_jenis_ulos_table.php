@@ -15,7 +15,7 @@ class CreateJenisUlosTable extends Migration
     {
         Schema::create('jenis_ulos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_jenis');
+            $table->string("id_jenis");
             $table->string('nama');
             $table->string('deskripsi',500);
             $table->string('harga');
