@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Login Admin</title>
+    <style>
+      span{
+        color: green;
+      }
+    </style>
   </head>
   <body style='background-image: url("{{asset('img/logg.jpg')}}");'>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
+            <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Beranda</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-            </div>
-            </div>
         </div>
     </nav>
-    <hr>
+
     <br><br><br><br>
     <div class="container card" style="width: 23rem;">
     <center>
@@ -38,8 +38,8 @@
           <input style="display: none;" type="checkbox" id="show-password">
         <label for="password">Password</label>
         <input id="password" class="form-control" type="password" name="password"><br><br>
-        <center><button class="btn btn">Login</button></center><br>
-
+        <center><button class="btn btn">Login</button></center>
+  
         @if (session('message'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
              <strong>{{ session('message') }}</strong>

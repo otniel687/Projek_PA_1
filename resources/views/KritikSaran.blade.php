@@ -111,14 +111,10 @@
         </div>
     </div>
 
-    <br><br>
-    <footer id="footer" class="bg-dark text-light">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12">
-          </div>
-          <div>
-          <br>
+    <center>
+    <footer  class="bg-dark text-light"> 
+      <br>          
+    <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
                     <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
@@ -138,8 +134,8 @@
             </p>
             </font>
         </div>
-      </div>
     </footer>
+    </center>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

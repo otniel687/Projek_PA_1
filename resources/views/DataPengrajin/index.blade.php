@@ -28,7 +28,7 @@
                             <td>{{ $suhi->alamat }}</td>
                             <td>{{ $suhi->kontak }}</td>
                             <td>{{ $suhi->kerajinan }}</td>
-                            <td><img width="50px"src="{{asset('foto')}}/{{ $suhi->foto }}" alt="not found"></td>
+                            <td><img width="200px"src="{{asset('foto')}}/{{ $suhi->foto }}" alt="not found"></td>
                             <td>
                                 <a href="/pengrajin/ubah/{{ $suhi->id }}"><i class="far fa-edit btn btn-success"></i></a>
                                 <a href="/pengrajin/hapus/{{ $suhi->id }}"><i class="fas fa-trash-alt btn btn-danger"></i></a>

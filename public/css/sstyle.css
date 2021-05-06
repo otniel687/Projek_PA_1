@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 body {
-    font-family: "Quicksand", sans-serif;
-    background-image: url("../img/bg1.jpeg");
-}
-
-body {
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Lora', serif;
     background-image: url("../img/bg1.jpeg");
     background-size: cover;
 }
@@ -17,6 +12,10 @@ h1 {
 
 thead {
     background-color: rgb(213, 214, 143);
+}
+
+tbody {
+    background-color: rgb(179, 228, 236);
 }
 
 .navbar {
@@ -75,11 +74,6 @@ thead {
 }
 .container a {
     text-decoration: none;
-}
-.container table {
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
 }
 @media (max-width: 576px) {
     .side-navbar {

@@ -26,7 +26,7 @@
                             <td>{{ $ulos->nama }}</td>
                             <td>{{ $ulos->deskripsi }}</td>
                             <td>{{ $ulos->harga }}</td>
-                            <td><img width="50px"src="{{asset('gambar')}}/{{ $ulos->gambar }}" alt="not found"></td>
+                            <td><img width="250px"src="{{asset('gambar')}}/{{ $ulos->gambar }}" alt="not found"></td>
                             <td>
                                 <a href="/jenis/ubah/{{ $ulos->id }}"><i class="far fa-edit btn btn-success"></i></a>
                                 <a href="/jenis/hapus/{{ $ulos->id }}"><i class="fas fa-trash-alt btn btn-danger"></i></a>

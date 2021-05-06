@@ -38,7 +38,7 @@ Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
 Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');
 Route::get('/login','App\Http\Controllers\login\LoginController@index')->name('login');
 Route::group(['middleware' => 'auth'], function(){
-Route::get('logout', 'App\Http\Controllers\login\LoginController@logout')->name('logout');
+Route::post('logout', 'App\Http\Controllers\login\LoginController@logout')->name('logout');
 
 //halaman login
 Route::get('/pengrajin', 'App\Http\Controllers\PengrajinController@index');
