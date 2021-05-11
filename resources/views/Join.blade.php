@@ -16,28 +16,12 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
         <link rel="stylesheet" href="fonts/icomoon/style.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-        <link rel="stylesheet" href="css/aos.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
-  <title>Kritik Saran</title>
-  <style>
-    span{
-        color: red;
-    }
-    h1{
-      color: yellowgreen;
-    }
-  </style>
+  <title>Join Pengrajin</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -68,39 +52,42 @@
           </div>
         </div>
     </nav>
-    <hr>
-    
-    <section id="sopi" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8" style="font-family: 'Dancing Script', cursive; font-family: 'Satisfy', cursive;">
-          <center><h1>Kritik dan Saran</h1></center>
-        </div>
-      </div>
-    </div>
-  </section>
-    <br>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <div class="container card" style="width: 50rem;">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+        <br><br>
+            <h1>Join Us</h1>
+            <div>
                 <br>
                 <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
                   @csrf
                     <div class="form-group">
-                        <label>Nama</label>
+                        <label>Nama Lengkap</label>
                         <input type="text" name="nama" class="form-control" value="">
                     </div>
                     <div class="form-group">
-                        <label>Kritik <span>*</span></label>
-                        <textarea type="text" name="kritik" class="form-control" value="" cols="30" rows="5"></textarea>
+                        <label>Alamat <span>*</span></label>
+                        <input type="text" name="kritik" class="form-control" value=""></input>
                     </div>
                     <div class="form-group">
-                        <label>Saran <span>*</span></label>
-                        <textarea type="text" name="saran" class="form-control" value="" cols="30" rows="5"></textarea>
+                        <label>Kontak <span>*</span></label>
+                        <input type="text" name="saran" class="form-control" value=""></input>
                     </div>
-                    <p><span>*</span>Wajib diisi</p>
+                    <div class="form-group">
+                        <label>Foto <span>*</span></label>
+                        <input type="file" name="saran" class="form-control" value=""></input>
+                    </div><br>
+                    <div>
+                    <label for="cars">Kerajinan yang dapat dibuatkan</label>
+                        <select name="kerajinan">
+                        <option>Ulos Batak Toba</option>
+                        <option>Ulos Batak Karo</option>
+                        <option>Ulos Batak Toba dan Karo (pewarna sintesis)</option>
+                        <option>Ulos Batak Toba dan Karo (pewarna alami)</option>
+                        </select>
+                    </div>
                     <br>
                     <div class="form-group">
                     <button type="submit" class="btn btn-success">Simpan</button>
@@ -109,9 +96,22 @@
                 </form>
             </div>
             </div>
+
+            <div class="col-md-1" style="background-color: coral;"></div>
+            <div class="col-md-4">
+            <br><br>
+            <h1>Contact Us</h1>
+                <div class="form-group">
+                    <label></label>
+                    <input type="text" name="nama" class="form-control" value="">
+                </div>
+
+            </div>
+
+
         </div>
     </div>
-    <br>
+
     <center>
     <footer  class="bg-dark text-light"> 
       <br>          
