@@ -12,7 +12,12 @@
             Pembuatan ulos tidak di buat dengan asal asalan, perlu skill yang cukup bagus dan memiliki ketelitian dalam pembuatannya. Maka perlunya pengerajin yang handal
             untuk membuat dalam pembuatan ulos. Beberapa pengerajin yang ada di Desa Suhisuhi dapat membantu anda memilih produk yang tepat untuk anda.
           </p><br>
-          <button class="btn-danger mt-3"><i class="fas fa-hand-point-right" href='/join'></i> Join Us (<span>specialty craftsmen</span>)</button>
+          <a class="navbar-brand" href="/join">          
+          <button class="btn-danger mt-3" href="/join"><i class="fas fa-hand-point-right"></i> Join Us (<span>specialty craftsmen</span>)</button></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
         </div>
       </div>
     </section>

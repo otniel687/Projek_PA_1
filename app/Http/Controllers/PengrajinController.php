@@ -19,6 +19,12 @@ class PengrajinController extends Controller
         return view('DataPengrajin.index', ['data'=>$data]);
     }
 
+    public function join()
+    {
+        //
+        return view('Join');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

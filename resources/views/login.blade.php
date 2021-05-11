@@ -24,7 +24,7 @@
     </nav>
 
     <br><br><br><br>
-    <div class="container card" style="width: 23rem;">
+    <div class="container card" style="width: 30rem;">
     <center>
         <h2><i class="fas fa-user"></i>&nbsp;&nbsp;<b class="title" style="color: navy;">Login Admin</b></h2>
         <hr>
