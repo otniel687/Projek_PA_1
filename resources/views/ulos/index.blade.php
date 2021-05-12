@@ -303,42 +303,33 @@
 
      <!--Footer-->
     <section id="footer" class="bg-dark text-light">
-    <section id="footer" class="bg-dark text-light">
-      <div>
-        <br> <br>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive; color: cornflowerblue; size:'7';">
-              <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village - since 2021!</p></font>
-            </div>
-            <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-            <div class="col-md-1"></div>
-            <div class="col-md-2" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive;">
-              
-              <div class="referens">
-              <h5>Link Terkait</h5><br>
-              <p href="https://samosirkab.go.id/">Pemkab Samosir</p>
-              <p href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</p>
-              <p href="https://www.kemenparekraf.go.id/">kemenparekraf RI</p>
-              <p href="https://www.del.ac.id/">IT Del</p>
-            </div>
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <a href="/kritik" class="btn btn-warning" style="width: 250px;">Kritik Dan Saran</a><br>
-              <br>
-              <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
-              <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-              <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-              <a class="social mt-5" href="https://web.telegram.org/" target="_blank"><i class="bi bi-telegram"></i></a>
-            </div>
+      <div class="row" style="margin-bottom: 70px; margin-top: 35px">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" style="color: cornflowerblue; size:'7';">
+          <font size='6'><p>UMKM website of Lumban Suhi-Suhi Village </p></font>
+        </div>
+        <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
+        <div class="col-md-3" style="">
+          <div class="referens">
+          <h4 style="color:darkcyan">Link Terkait</h4><br>
+            <h5><a href="https://samosirkab.go.id/">Pemkab Samosir</a></h5><br>
+            <h5><a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a></h5><br>
+            <h5><a href="https://www.kemenparekraf.go.id/">kemenparekraf RI</a></h5><br>
+            <h5><a href="https://www.del.ac.id/">IT Del</a></h5>
           </div>
         </div>
-    <br><br><br>
+        <div class="col-md-3">
+          <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
+          <br>
+          <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
+          <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
+          <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+          <a class="social mt-5" href="https://web.telegram.org" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
     <center>
-    <footer>           
-    <div>
+      <footer>           
+          <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
                     <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
@@ -358,8 +349,9 @@
             </p>
             </font>
         </div>
-    </footer>
+      </footer>
     </center>
+    </section>
     <!--Akhir Footer-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

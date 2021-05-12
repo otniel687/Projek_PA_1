@@ -33,7 +33,7 @@ textarea {
 
 #footer .referens a {
     text-decoration: none;
-    color: #5a6cbf;
+    color: #ffff;
 }
 
 #content_ulos {
@@ -53,6 +53,15 @@ textarea {
     position: relative;
     padding: 0;
     filter: brightness(70%);
+}
+
+.garis-bawah-putih {
+    border: 4px solid rgb(255, 255, 255);
+    width: 150px;
+    margin-left: 2px;
+    -webkit-animation: typing 1s steps(70, end);
+    animation: animasi-ketik 1s steps(70, end);
+    margin-bottom: 30px;
 }
 
 #header-ulos .container {

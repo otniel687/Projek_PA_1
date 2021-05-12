@@ -101,85 +101,29 @@
 
     <!--Content-->
     <section id="content">
+      @foreach ($informasi as $tentang) 
       <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center m-3">
-          <div class="col">
+        <div class="row">
+          <div class="col-md-3" data-aos="flip-right">
+            
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Pembuat Ulos</h4>
+                <h4 class="mt-2 mb-2 fw-normal text-center">{{$tentang->nama}} </h4>
               </div>
               <div class="card figure">
-                <img class="img-fluib" src="Image/desa1.jpeg" alt="" />
+                <img class="img-fluib" src="{{ url('image') }}/{{ $tentang->gambar}}" />
               </div>
               <div class="card-body content ">
                 <div class="read-more">
-                  Tenun ulos Desa Lumban Suhi-Suhi adalah salah satu tenun ulos tradisonal yang menjadi penghasil/produsen ulos terbesar di Samosir. Tenun ulos di Desa Lumban Suhi-Suhi adalah sebuah kegiatan 
-                    bertenun yang dilakukan nenek moyang hingga dapat terjaga sampai sekarang. Dalam proses pembuatan Ulos, para pengrajin menggunakan bahan-bahan pewarna alami yang berasal dari tumbuh-tumbuhan. 
-                    Gunanya untuk menjaga kualitas kain tenun ulos agar tetap awet dan tidak mudah luntur. Ulos yang dihasilkan dari Desa ini sudah sangat terkenal kualitasnya, sehingga menarik para wisatawan untuk 
-                    datang ke Desa Suhisuhi, Para wisatawan yang datang bukan hanya dari daerah sumatera saja namun juga sudah sampai terdengar ke luar negeri.
+                  {{$tentang->informasi}}
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Desa Suhisuhi</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="Image/desa2.jpg" alt="" />
-              </div>
-              <div class="card-body content ">
-                <div class="read-mori">
-                    Huta Raja Desa Lumban Suhi Suhi Toruan ini terletak di Kecamatan Pangururan Kabupaten Samosir yang jaraknya hanya 40 Menit dari Tomok. 
-                    Ketika memasuki pedesaan kreatif penghasil ulos ini, wisatawan akan disuguhi dengan pemandangan indah Danau Toba yang jaraknya hanya beberapa puluh meter dari jalan utama. Pemandangan Gunung 
-                    Pusuk Buhit ikut mewarnai panorama yang memamerkan keindahan alam tanah Batak ini. Di sepanjang jalan di sisi kiri dan kanan Anda, perkampungan Batak dengan kekhasan rumah adat Batak “Jabu Bolon” 
-                    pun mengiringi wisata Anda di desa ini. Anda juga dapat menemukan sebuah tugu atau makam Batak yang khas dengan bangunan bertingkat dan bermotif gorga.
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Fashion Show</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="image/desa3.jpeg" alt="" />
-              </div>
-              <div class="card-body content ">
-                <div class="read-moro">
-                   Design ulos juga dapat dibuat menjadi gaya terkini, dan dengan dibuat event ini kita tahu bahwa ulos juga dapat kita gunakan dalam kegiatan sehari. Ulos juga dapat membuat kita menjadi
-                   fashionabel dan dapat kita gunakan dalam kegiatan lainnya.
-                   Ulos adalah salah satu karya yang luar biasa dari para penenun di Hutaraja ini. Jelas dengan adanya event dapat membantu mengembangkan bakat anak muda dalam mengasah 
-                   bakat mereka. 
- 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Matonun Sadari</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="image/desa4.jpeg" alt="" />
-              </div>
-              <div class="card-body content ">
-                <div class="read-moru">
-                  "Martonun Sadari" Sebuah kegiatan kearifan lokal Desa Lumban Suhi-suhi Toruan dalam upaya memperkenalkan kampung Ulos Hutaraja. <a href="https://www.instagram.com/p/CFin6BLBod5/?igshid=1jy2wpsm8cq69">@batak_com</a><br><br>
-
-                   Para pengrajin melakukan kegiatan ini para pengerajin akan menenun di halaman rumah mereka dengan memamerkan ulos yang telah di buat mereka. Bertenun menggambarkan berapa kuat dan tangguhnya seorang perempuan batak toba yang sering dijuluki 
-                  dengan Boru Ni Raja karena bertenun bukanlah hal yang mudah. 
-                 
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
+       @endforeach
     </section>
     <!--Akhir Content-->
 
@@ -305,41 +249,34 @@
 
     <!--Footer-->
     <section id="footer" class="bg-dark text-light">
-      <div>
-        <br> <br>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive; color: cornflowerblue; size:'7';">
-              <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village - since 2021!</p></font>
-            </div>
-            <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-            <div class="col-md-1"></div>
-            <div class="col-md-2" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive;">
-              
-              <div class="referens">
-              <h5>Link Terkait</h5><br>
-              <p href="https://samosirkab.go.id/">Pemkab Samosir</p>
-              <p href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</p>
-              <p href="https://www.kemenparekraf.go.id/">kemenparekraf RI</p>
-              <p href="https://www.del.ac.id/">IT Del</p>
-            </div>
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <a href="/kritik" class="btn btn-warning" style="width: 250px;">Kritik Dan Saran</a><br>
-              <br>
-              <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
-              <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-              <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-              <a class="social mt-5" href="https://web.telegram.org" target="_blank"><i class="bi bi-telegram"></i></a>
-            </div>
+      <div class="row" style="margin-bottom: 70px; margin-top: 35px">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" style="color: cornflowerblue; size:'7';">
+          <font size='6'><p>UMKM website of Lumban Suhi-Suhi Village </p></font>
+        </div>
+        <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
+        <div class="col-md-3" style="">
+          <div class="referens">
+          <h2 style="color:darkcyan">Link Terkait</h2><br>
+          <div class="garis-bawah-putih"></div>
+            <h5><a href="https://samosirkab.go.id/">Pemkab Samosir</a></h5><br>
+            <h5><a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a></h5><br>
+            <h5><a href="https://www.kemenparekraf.go.id/">kemenparekraf RI</a></h5><br>
+            <h5><a href="https://www.del.ac.id/">IT Del</a></h5>
           </div>
         </div>
-    <br><br><br>
+        <div class="col-md-3">
+          <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
+          <br>
+          <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
+          <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
+          <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+          <a class="social mt-5" href="https://web.telegram.org" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
     <center>
-    <footer>           
-    <div>
+      <footer>           
+          <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
                     <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
@@ -359,8 +296,9 @@
             </p>
             </font>
         </div>
-    </footer>
+      </footer>
     </center>
+    </section>
     <!--Akhir Footer-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
@@ -445,7 +383,7 @@
           $(this).parent(".read-moru").html(readMoruHTML.substr(0, 100)).append("<a href='' class='read-moru-link'> Show More</a>");
         });
       });
-
+      
      </script>
 
 
