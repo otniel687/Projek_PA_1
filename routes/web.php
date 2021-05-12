@@ -31,7 +31,7 @@ Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
 Route::get('/halamanpengrajin', 'App\Http\Controllers\HalamanpengrajinController@index');
 Route::get('/kritik', 'App\Http\Controllers\KritikController@tampil');
 Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
-
+Route::get('/join', 'App\Http\Controllers\JoinController@join');
 
 
 //login
@@ -55,4 +55,6 @@ Route::get('/jenis/hapus/{id}', 'App\Http\Controllers\JenisController@destroy');
 //pengguna
 Route::get('/kritiksaran', 'App\Http\Controllers\KritikController@index');
 Route::get('/kritiksaran/hapus/{id}', 'App\Http\Controllers\KritikController@destroy');
+Route::post('/kritiksaran/simpan', 'App\Http\Controllers\KritikController@store');
+
 });

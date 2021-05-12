@@ -11,18 +11,16 @@
                 <table class="table table-bordered table-striped" style="text-align:center">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Kritik</th>
-                            <th scope="col">saran</th>
+                            <th scope="col">Saran</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($data as $ulos)
                         <tr>
-                            <th scope='row'>{{ $ulos->id_pengguna }}</th>
-                            <td>{{ $ulos->nama }}</td>
+                            <td scope='row'>{{ $ulos->nama }}</td>
                             <td>{{ $ulos->kritik  }}</td>
                             <td>{{ $ulos->saran }}</td>
                             <td>
