@@ -13,16 +13,16 @@
     </style>
     <section id="pengrajin" class="d-flex align-items-center">
       <div class="container p-4 p-md-5 mb-4 text-white rounded" style="color: #fff;  background-size: cover;">
-        <div class="col-md-6 px-0">
+        <div class="col-md-8 px-0">
           <h1 class="display-4 fst-italic">Pembuat Yang Handal Dengan Hasil Yang Spesial.</h1>
-          <p class="lead my-3">
+          <p class="lead my-5">
             Pembuatan ulos tidak di buat dengan asal asalan, perlu skill yang cukup bagus dan memiliki ketelitian dalam pembuatannya. Maka perlunya pengerajin yang handal
             untuk membuat dalam pembuatan ulos. Beberapa pengerajin yang ada di Desa Suhisuhi dapat membantu anda memilih produk yang tepat untuk anda.
           </p><br>
           <br>
           <div class="s">
           <b>Khusus Pengrajin,<br>
-          Jika ingin bergabung dengan kami, hanya mengisi data yang ada pada tombol dibawah ini.</b>
+          Jika ingin bergabung dengan kami, hanya mengisi data yang ada pada tombol dibawah ini.</b><br>
           <a class="navbar-brand" href="/join">          
           <button class="btn-danger mt-3" href="/join"><i class="fas fa-hand-point-right"></i> Bergabunglah dengan kami</button></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
