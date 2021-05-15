@@ -29,22 +29,22 @@
         <br> <br>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3" style="cursive; color: cornflowerblue; size:'7';">
-              <font size='6'><p>UMKM website of Lumban Suhi-Suhi Village</p></font>
+            <div class="col-md-4" style="font-family: 'Righteous', cursive; color: cornflowerblue; size:'7';">
+              <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village - since 2021!</p></font>
             </div>
             <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-            <div class="col-md-4" style="">
+            <div class="col-md-3" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive;">
               <h4 style="color:darkcyan">A little bit about this site</h4>
-              <div class="garis-bawah-putih"></div>
-              <p>Hello,<br>We are from group 01, Project End 1 (PA 1) ;<br> The Development Team manages UMKM Websites. This website is used to promote and publish about Ulos UMKM from this village. For you, this may be a source of inspiration for a new project or something else that helps you. <br>Enjoy!</p>
+              <p>Hello,<br>We are from group 01, Project End 1 (PA 1) ; The Development Team manages UMKM Websites. This website is used to promote and publish about Ulos UMKM from this village. For you, this may be a source of inspiration for a new project or something else that helps you. <br>Enjoy!</p>
             </div>
+            <div class="col-md-1"></div>
             <div class="col-md-3">
               <a href="/kritik" class="btn btn-warning" style="width: 250px;">Kritik Dan Saran</a><br>
               <br>
               <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
               <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
               <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-              <a class="social mt-5" href="https://web.telegram.org/" target="_blank"><i class="bi bi-telegram"></i></a>
+              <a class="social mt-5" href="https://www.youtube.com/watch?v=VLNjo2LQ2XY" target="_blank"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
         </div>
