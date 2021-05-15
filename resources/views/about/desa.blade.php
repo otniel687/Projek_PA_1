@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
-    <title> @yield('title') | Desa Suhisuhi</title>
+    <title> Tentang Desa| Desa Suhisuhi</title>
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
     <!--style CSS-->
@@ -101,11 +101,10 @@
 
     <!--Content-->
     <section id="content">
-      @foreach ($informasi as $tentang) 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3" data-aos="flip-right">
-            
+          @foreach ($desa as $tentang) 
+          <div class="col-md-3 " data-aos="flip-right">
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
                 <h4 class="mt-2 mb-2 fw-normal text-center">{{$tentang->nama}} </h4>
@@ -119,11 +118,10 @@
                 </div>
               </div>
             </div>
-            
           </div>
+          @endforeach
         </div>
       </div>
-       @endforeach
     </section>
     <!--Akhir Content-->
 
@@ -136,92 +134,15 @@
           </div>
         </div>
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 d-flex justify-content-center m-3">
+          @foreach ($galery as $foto)
           <div class="col mb-3">
             <div class="card item">
-              <a href="image/galeri1.jpg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri1.jpg" class="card-img-top rounded mx-auto d-block" >
+              <a href="{{ url('image') }}/{{ $foto->gambar}}" class="fancybox" data-fancybox="gallery1">
+                <img src="{{ url('image') }}/{{ $foto->gambar}}" class="card-img-top rounded mx-auto d-block" >
               </a>
             </div>
           </div>
-          <div class="col mb-3">
-            <div class="card item">
-              <a href="image/galeri2.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri2.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-            </div>
-          </div>
-          <div class="col mb-3">
-            <div class="card item">
-              <a href="image/galeri3.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri3.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-            </div>
-          </div>
-          <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri4.jpg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri4.jpg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-          
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri5.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri5.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-            <div class="card item">
-              <a href="image/galeri6.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri6.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-            </div>
-          </div>
-            
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri7.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri7.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri8.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri8.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri9.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri9.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri10.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri10.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri11.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri11.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card item">
-                <a href="image/galeri12.jpeg" class="fancybox" data-fancybox="gallery1">
-                <img src="image/galeri12.jpeg" class="card-img-top rounded mx-auto d-block" >
-              </a>
-              </div>
-            </div>
+          @endforeach
           </div>
         </div>
       </div>

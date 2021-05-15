@@ -19,19 +19,22 @@ class DesaController extends Controller
         // $desa = Desa::all();
         // return view('About.desa', ['desa'=>$desa]);
 
-        $informasi = $informasi = DB::table('data_web')
-        ->select('data_web.*')->limit(4)->orderBy('created_at')
-        ->get();
+        // $informasi = $informasi = DB::table('data_web')
+        // ->select('data_web.*')->limit(4)->orderBy('created_at')
+        // ->get();
+        // return view('About.desa',[
+        //     'informasi'=>$informasi
+        // ]);
+        $desa = Desa::paginate(20);
+        $galery = DB::table('galery')
+        ->select('galery.*','galery.gambar')
+        ->paginate();
         return view('About.desa',[
-            'informasi'=>$informasi
-        ]);
+            'galery'=>$galery,
+        ], compact('desa'));
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
