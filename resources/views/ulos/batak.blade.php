@@ -62,90 +62,20 @@
           </div>
         </div>
         <div class="row row-cols-2 row-cols-md-3 text-md-center d-flex justify-content-center m-4">
-          
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Ragi Hidup</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/ragi_idup.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Sibolang</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/Sibolang.jpg')}} " alt="" />
-              </div>
-            </div>
-          </div>
 
+        @foreach( $data_web2 as $uls)          
           <div class="col">
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Mangiring</h4>
+                <h4 class="mt-2 mb-2 fw-normal">{{ $uls->nama }}</h4>
               </div>
               <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/mangiring.jpeg')}} " alt="" />
+                <img class="img-fluib" src="{{asset('gambar/'.$uls->gambar)}}
+                " alt="">
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Sadum</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/sadum.jpg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mb-2 mt-2 fw-normal">Ragi Hotang</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/ragi_hotang.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Ragi Huting</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/ragi_huting.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h5 class="mb-2 mt-2 fw-normal">Bintang Maratur</h5>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/bintang_maratur.png')}} " alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Simarinjam Sisi</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/simarinjam.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
         </div>    
       </div>

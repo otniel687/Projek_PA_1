@@ -32,6 +32,9 @@ Route::get('/halamanpengrajin', 'App\Http\Controllers\HalamanpengrajinController
 Route::get('/kritik', 'App\Http\Controllers\KritikController@tampil');
 Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
 Route::get('/join', 'App\Http\Controllers\JoinController@join');
+Route::get('/data_web1', 'App\Http\Controllers\Web1Controller@index');
+Route::get('/data_web2', 'App\Http\Controllers\Web2Controller@batak');
+Route::get('/data_web3', 'App\Http\Controllers\Web3Controller@batak');
 
 
 //login
