@@ -71,17 +71,14 @@
                 <div class="carousel-item active">
                   <img src="image/image1.jpg" alt="" />
 
-                  
                 </div>
                 <div class="carousel-item">
                   <img src="image/image2.jpg" alt="" />
-
-                  
+  
                 </div>
                 <div class="carousel-item">
                   <img src="image/image3.jpg" alt="" />
-
-                  
+  
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
@@ -160,7 +157,7 @@
         <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
           <div class="col">
             <video controls class="rounded mx-auto d-block">
-              <source src="video/desa.mp4" type="video/mp4" />
+              <source src="{{ url('video') }}/{{ $video->video}}" type="video/mp4" />
             </video>
           </div>
         </div>

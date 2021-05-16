@@ -15,9 +15,8 @@ class CreateGaleryTable extends Migration
     {
         Schema::create('galery', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_gambar');
-            $table->string('gambar')->nullable();
-            $table->string('id_display',500);
+            $table->unsignedBigInteger('id_gambar');
+            $table->unsignedBigInteger('id_galery');
             $table->timestamps();
         });
     }

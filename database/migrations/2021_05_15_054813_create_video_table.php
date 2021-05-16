@@ -17,7 +17,6 @@ class CreateVideoTable extends Migration
             $table->id();
             $table->integer('id_video');
             $table->string('video')->nullable();
-            $table->string('id_display',500);
             $table->timestamps();
         });
     }
