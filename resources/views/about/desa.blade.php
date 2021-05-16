@@ -1,5 +1,5 @@
 
-@extends('layouts.defaulttwo')
+@extends('layouts.defaultthree')
 @section('title', 'Tentang Desa')
 @section('header')
     <!--Carousel-->
