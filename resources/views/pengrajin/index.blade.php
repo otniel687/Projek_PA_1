@@ -64,14 +64,29 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                <h4>Nama : </h4><br>
-                                <p>{{$pr->nama}}</p>
-                                <h4>Contact Person : </h4><br>
-                                <p>{{$pr->kontak}}</p>
-                                <h4>Lokasi : </h4><br>
-                                <p>{{$pr->alamat}}</p>
-                                <h4>Ulos yang dapat di buat : </h4><br>
-                                <p>{{$pr->kerajinan}}</p>
+
+                              <table class="table table-hover" cellpadding="10">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td>{{$pr->nama}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Person</td>
+                                    <td>:</td>
+                                    <td>{{$pr->kontak}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Lokasi</td>
+                                    <td>:</td>
+                                    <td>{{$pr->alamat}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Ulos yang dapat di buat </td>
+                                    <td>:</td>
+                                    <td>{{$pr->kerajinan}}</td>
+                                </tr>
+                        </table>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
