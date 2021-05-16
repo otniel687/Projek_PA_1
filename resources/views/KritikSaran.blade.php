@@ -34,14 +34,11 @@
     span{
         color: red;
     }
-    h1{
-      color: yellowgreen;
-    }
   </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -73,36 +70,42 @@
     <section id="sopi" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
-        <div class="col-lg-8" style="font-family: 'Dancing Script', cursive; font-family: 'Satisfy', cursive;">
-          <center><h1>Kritik dan Saran</h1></center>
+        <div class="col-lg-8" style="font-family: 'Dancing Script', cursive;">
+          <font size="7"><center>Kritik dan Saran</center></font>
         </div>
       </div>
     </div>
   </section>
     <br>
     <div class="container">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+      label, button{
+        font-family: 'Concert One', cursive;
+      }
+    </style>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <div class="container card" style="width: 50rem;">
+            <div class="container card" style="width: 50rem;" class="hero rounded-3 px-5 pb-5 pt-5">
                 <br>
                 <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
                   @csrf
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                         <label>Nama</label>
                         <input type="text" name="nama" class="form-control" value="">
                     </div>
-                    <div class="form-group">
-                        <label>Kritik <span>*</span></label>
+                    <div class="form-group mt-3">
+                        <label>Kritik</label>
                         <textarea type="text" name="kritik" class="form-control" value="" cols="30" rows="5"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Saran <span>*</span></label>
+                    <div class="form-group mt-3">
+                        <label>Saran</label>
                         <textarea type="text" name="saran" class="form-control" value="" cols="30" rows="5"></textarea>
                     </div>
-                    <p><span>*</span>Wajib diisi</p>
                     <br>
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                     <button type="submit" class="btn btn-success">Simpan</button>
                     </div>
                     <br>

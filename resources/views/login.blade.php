@@ -32,10 +32,9 @@
     <form class="form container" method="post" action="{{route('login')}}">
     @csrf
         <div class="loginbody">
-        <label for="username">Username</label>
-        <input id="username" class="form-control border-top-0" type="email" name="email"><br>
-        <label class="show-icon" for="show-password"> </label>
-          <input style="display: none;" type="checkbox" id="show-password">
+        <label for="username">Email</label>
+        <input id="username" class="form-control" type="email" name="email"><br>
+        <input style="display: none;" type="checkbox" id="show-password">
         <label for="password">Password</label>
         <input id="password" class="form-control" type="password" name="password"><br><br>
         <center><button class="btn btn">Login</button></center>
