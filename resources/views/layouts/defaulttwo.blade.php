@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
+    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
     <title> @yield('title') | Desa Suhisuhi</title>
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
@@ -43,7 +44,7 @@
                 <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengerajin</a>
+                <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
               </li>
               <li class="nav-item">
                 <a class="nav-item btn btn-info tombol" href="/login">Login Admin</a>
@@ -100,8 +101,8 @@
           <br>
           <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
           <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-          <a class="social mt-5" href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-          <a class="social mt-5" href="https://web.telegram.org" target="_blank"><i class="bi bi-telegram"></i></a>
+          <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+          <a class="social mt-5" href="https://www.youtube.com/watch?v=VLNjo2LQ2XY" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
     <center>

@@ -7,6 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,7 +26,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +38,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/desa">Tentang Desa</a>
-              </li>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="/ulos">Ulos</a>
@@ -55,10 +55,8 @@
 
     <div class="container">
         <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-        <br><br>
-            <h1>Join Us</h1>
+        <center><h1>Join Us</h1></center>
+        <div class="col-md-7">
             <div>
                 <br>
                 <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
@@ -67,47 +65,39 @@
                         <label>Nama Lengkap</label>
                         <input type="text" name="nama" class="form-control" value="">
                     </div>
-                    <div class="form-group">
-                        <label>Alamat <span>*</span></label>
+                    <div class="form-group mt-3">
+                        <label>Alamat</label>
                         <input type="text" name="kritik" class="form-control" value=""></input>
                     </div>
-                    <div class="form-group">
-                        <label>Kontak <span>*</span></label>
+                    <div class="form-group mt-3">
+                        <label>Kontak</label>
                         <input type="text" name="saran" class="form-control" value=""></input>
                     </div>
-                    <div class="form-group">
-                        <label>Foto <span>*</span></label>
+                    <div class="form-group mt-3">
+                        <label>Foto</label>
                         <input type="file" name="saran" class="form-control" value=""></input>
-                    </div><br>
-                    <div>
-                    <label for="cars">Kerajinan yang dapat dibuatkan</label>
-                        <select name="kerajinan">
+                    </div>
+                    <div class="form-group mt-3">
+                    <label>Kerajinan yang dapat dibuatkan</label>
+                    <select name="kerajinan" class="form-control">
+                        <option value="">Pilih Keterampilan</option>
                         <option>Ulos Batak Toba</option>
                         <option>Ulos Batak Karo</option>
                         <option>Ulos Batak Toba dan Karo (pewarna sintesis)</option>
                         <option>Ulos Batak Toba dan Karo (pewarna alami)</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="form-group">
+                    </select>
+                </div>
+                    <div class="form-group mt-3">
                     <button type="submit" class="btn btn-success">Simpan</button>
                     </div>
-                    <br>
                 </form>
             </div>
             </div>
 
-            <div class="col-md-1" style="background-color: coral;"></div>
+            <div class="col-md-1"></div>
             <div class="col-md-4">
-            <br><br>
-            <h1>Contact Us</h1>
-                <div class="form-group">
-                    <label></label>
-                    <input type="text" name="nama" class="form-control" value="">
-                </div>
-
+              
             </div>
-
 
         </div>
     </div>

@@ -1,3 +1,4 @@
+
 @extends('layouts.defaulttwo')
 @section('title', 'Tentang Desa')
 @section('header')
@@ -115,8 +116,9 @@
     <!--Akhir Video-->
 @endsection
 
+
 @section('script')
-    
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
           

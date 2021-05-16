@@ -1,7 +1,7 @@
 @extends('layouts.defaulttwo')
 @section('title','Ulos')
 @section('header')
-    
+
     <!--Header-->
     <section id="header-ulos" class=" d-flex align-items-center">
       <div class="container p-4 p-md-5 mb-4 text-white rounded" style="color: #fff;  background-size: cover;">
