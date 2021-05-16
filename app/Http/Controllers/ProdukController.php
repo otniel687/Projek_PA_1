@@ -10,8 +10,8 @@ class ProdukController extends Controller
     //
     public  function index()
     {
-        $jenis_ulos = DB::table('jenis_ulos')->get();
-        return view('produk.index', ['jenis_ulos' => $jenis_ulos]);
+        $produk = DB::table('produk')->get();
+        return view('produk.index', ['produk' => $produk]);
     }
     public function home()
     {
