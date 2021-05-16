@@ -61,68 +61,23 @@
             <h3 class="text-center">Jenis Jenis Ulos</h3>
           </div>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 text-center d-flex justify-content-center m-3">
+        <div class="row row-cols-2 row-cols-md-3 text-md-center d-flex justify-content-center m-4">
+
+        @foreach( $data_web3 as $uls)          
           <div class="col">
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Beka Buluh</h4>
+                <h4 class="mt-2 mb-2 fw-normal">{{ $uls->nama }}</h4>
               </div>
               <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/beka_buluh.jpg')}} " alt="" />
+                <img class="img-fluib" src="{{asset('image/'.$uls->gambar)}}
+                " alt="">
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Uis Parembah</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('Image/parembah.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Arinteneng</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/arinteneng.jpeg')}} " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Julu berjongkit</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/julu_berjongkit.jpeg')}}  " alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Gatip</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/gatip.jpeg')}}" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-              <div class="card-header">
-                <h4 class="mt-2 mb-2 fw-normal">Pementing</h4>
-              </div>
-              <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/pementing.jpeg')}}" alt="" />
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
+        </div>    
       </div>
     </section>
     @endsection

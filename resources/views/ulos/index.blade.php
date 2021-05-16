@@ -86,7 +86,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="Image/ragi_idup.jpeg" alt="" />
+                <img class="img-fluib" src="gambar/ragi_idup.jpeg" alt="" />
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="Image/mangiring.jpeg" alt="" />
+                <img class="img-fluib" src="gambar/mangiring.jpeg" alt="" />
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="image/ragi_hotang.jpeg" alt="" />
+                <img class="img-fluib" src="gambar/ragi_hotang.jpeg" alt="" />
               </div>
             </div>
           </div>
@@ -169,116 +169,17 @@
             </div>
           </div>
 
-          <div class="row jarak">
-            <h4>1. Pembuatan benang</h4>
-          </div>
-          <div class="row g-1">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="">
-                <img src="image/proses1.jpeg" alt="" class="rounded mx-auto d-block" />
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-              <p >
-                <span class="tab"></span> Pada tahap awal, Kapas yang telah diperoleh kemudian digulung (dalam masyarakat batak dulu disebut "bebe") 
-                agar kapas mengembang dan mempermudah pemintalan. Lalu Pemintalan kapas (dalam masyarakat batak dulu disebut "mampis") dengan nama 
-                bernama "sorha" (roda, alat pemintal benang). Pemintalan minimal harus dilakukan dua orang dimana satu orang memintal benang dan satu 
-                orang lainnya memutar sorha.
-              </p>
+            @foreach( $data as $ulos)
+              <h4>{{ $ulos->judul }}</h4>
+              <p>{{ $ulos->informasi}}</p>
+              <img src="image/{{ $ulos->gambar }}" alt="">
+
+              @endforeach
+
             </div>
           </div>
 
-          <div class="row jarak">
-            <h4>2. Pewarnaan benang</h4>
-          </div>
-          <div class="row g-1">
-             <div class="col-md-4 col-sm-12 col-xs-12 ">
-              <div class="">
-                <img src="image/proses2.jpeg" alt="" class="rounded mx-auto d-block">
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-              <p >
-                <span class="tab"></span> Selanjutnya benang diwarnai untuk memperoleh  warna merah (manubar) dan hitam (mansop). Bahan pewarna yang 
-                digunakan terbuat dari daun-daunan berbagai jenis yang sebelumnya telah difermentasi untuk menghasilkan warna yang diinginkan.
-              </p>
-            </div>
-          </div>
-
-          <div class="row jarak">
-            <h4>3. Gatip (Pengikatan)</h4>
-          </div>
-          <div class="row g-1">
-            <div class="col">
-              <p >
-                <span class="tab"></span>Sebelum pembuatan ulos dimulai, motif khusus pada ulos dibuat terlebih dahulu menggunakan benang standar yang 
-                belum berwarna (putih) yang diikat dengan bahan pengikat terdiri atas serat dan daun serai.
-              </p>
-            </div>
-          </div>
-          <div class="row jarak">
-            <h4> 4. Unggas (Pencerahan Benang)</h4>
-          </div>
-          <div class="row g-1">
-            <div class="col">
-              <p >
-                <span class="tab"></span>Benang yang baru selesai ditubar atau disop biasanya berwarna kusam sehingga perlu diunggas untuk memberi kesan 
-                yang lebih cemerlang. kemudian benang dilumuri nasi yang dilumerkan kemudian digosok dengan kuas bulat dari ijuk. Biasanya benang yang 
-                sudah diunggas sifatnya agak kenyal dan semakin terurai setelah dijemur di bawah sinar matahari terik.
-              </p>
-            </div>
-          </div>
-          <div class="row jarak">
-            <h4> 5. Ani (penguntaian)</h4>
-          </div>
-          <div class="row g-1">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="">
-                <img src="image/proses3.jpeg" alt="" class="rounded mx-auto d-block" />
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-              <p >
-                <span class="tab"></span>Benang yang telah diunggas kemudian diuntai. sebelum diuntai, benang digulung berbentuk bola agar mempermudah 
-                enguntaian. alat yang digunakan adalah "anian" yang terdiri atas sepotong balok kayu yang diatasnya ditancapkan tongkat pendek sesuai 
-                ukuran ulos yang dikehendaki. 
-              </p>
-            </div>
-          </div>
-          <div class="row jarak">
-            <h4> 6. Tonun</h4>
-          </div>
-          <div class="row g-1">
-          <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="">
-                <img src="image/proses4.jpeg" alt="" class="rounded mx-auto d-block" />
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-              <p >
-                <span class="tab"></span>Setelah benang diuntai, maka selanjutnya benang pun ditenun untuk membentuk sehelai ulos. Tonun (tenun) adalah proses 
-                pembentukan benang yang sudah “diani” menjadi sehelai ulos. Mereka ini yang lajim disebut “partonun”.
-              </p>
-            </div>
-          </div>
-          <div class="row jarak">
-            <h4> 7. Sirat</h4>
-          </div>
-          <div class="row g-1">
-          <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="">
-                <img src="image/proses5.jpeg" alt="" class="rounded mx-auto d-block" />
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-              <p >
-                <span class="tab"></span>Proses terakhir menjadi ulos yang memberi hiasan pengikat rambu ulos (sirat) yang biasanya dibentuk dengan motif 
-                gorga. Orang yang melakukan pekerjaan ini disebut “panirat”. Sirat adalah hiasan pengikat rambu ulos. Biasanya dibentuk dengan motif gorga.
-            </div>
-          </div>
           
-        </div>
-      </div>
     </section>
     <!--Akhir Proses-->
 
