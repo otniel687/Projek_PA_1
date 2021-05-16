@@ -44,7 +44,7 @@
                 <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengerajin</a>
+                <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
               </li>
               <li class="nav-item">
                 <a class="nav-item btn btn-info tombol" href="/login">Login Admin</a>
