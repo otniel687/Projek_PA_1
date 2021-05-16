@@ -44,6 +44,23 @@ class PengrajinController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'nama' => 'required',
+            'alamat' => 'required',
+            'kontak' => 'required',
+            'kerajinan' => 'required',
+            'foto' => 'required',
+        ]);
+
+        Pengrajin::create([
+            'nama' => $request->nama,
+            'alamat' => $request->alamat,
+            'kontak' => $request->kontak,
+            'kerajinan' => $request->kerajinan,
+            'foto'=> $request->foto
+        ]);
+
+        return redirect('/');
     }
 
     /**

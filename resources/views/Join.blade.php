@@ -87,27 +87,43 @@
             <div class="col-md-2"></div>
             <div class="col-md-6">
             <div class="container card" style="width: 50rem;" class="hero rounded-3 px-5 pb-5 pt-5">
-                <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
+                <form enctype="multipart/form-data" action="/join/simpan" method="post">
                   @csrf
                     <div class="form-group">
                         <label>Nama Lengkap</label>
-                        <input type="text" name="nama" class="form-control" value="" autocomplete="off" placeholder="Tuliskan nama anda">
+                        <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" autocomplete="off" placeholder="Tuliskan nama anda">
                     </div>
+                    @error('nama')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     <div class="form-group mt-3">
                         <label>Alamat</label>
-                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="Tuliskan alamat anda"></input>
+                        <input type="text" name="alamat" class="form-control @error('alamat') is-invalid @enderror" value="{{ old('alamat') }}" autocomplete="off" placeholder="Tuliskan alamat anda"></input>
                     </div>
+                    @error('alamat')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     <div class="form-group mt-3">
                         <label>Kontak</label>
-                        <input type="text" name="saran" class="form-control" value="" autocomplete="off" placeholder="Tuliskan kontak yang dapat dihubungi"></input>
+                        <input type="text" name="kontak" class="form-control @error('kontak') is-invalid @enderror" value="{{ old('kontak') }}" autocomplete="off" placeholder="Tuliskan kontak yang dapat dihubungi"></input>
                     </div>
+                    @error('kontak')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     <div class="form-group mt-3">
                         <label>Foto</label>
-                        <input type="file" name="gambar" class="form-control" placeholder="Masukkan foto">
+                        <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror" value="{{ old('foto') }}">
                     </div>
+                    @error('foto')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     <div class="form-group mt-3">
                     <label>Kerajinan yang dapat dibuatkan</label>
-                    <select name="kerajinan" class="form-control">
+                    <select name="kerajinan" class="form-control @error('kerajinan') is-invalid @enderror" value="{{ old('kerajinan') }}">
                         <option value="">Pilih Keterampilan</option>
                         <option value="">Ulos Batak Karo</option>
                         <option value="">Ulos Batak Karo</option>
@@ -115,6 +131,10 @@
                         <option value="">Ulos Batak Toba dan Karo (pewarna alami)</option>
                     </select>
                     </div>
+                    @error('kerajinan')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     <br>
                     <div class="form-group mt-3">
                     <button type="submit" style="float: right;" class="btn btn-primary" style='font-size:16px'><i class='far fa-paper-plane'></i> Simpan</button>
