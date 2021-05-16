@@ -29,11 +29,10 @@
         <br> <br>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-4" style="font-family: 'Righteous', cursive; color: cornflowerblue; size:'7';">
-              <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village - since 2021!</p></font>
+            <div class="col-md-3" style="cursive; color: cornflowerblue; size:'7';">
+              <font size='6'><p>UMKM website of Lumban Suhi-Suhi Village</p></font>
             </div>
-            <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-            <div class="col-md-3" style="font-family: 'Caveat', cursive;font-family: 'Righteous', cursive;">
+            <div class="col-md-4" >
               <h4 style="color:darkcyan">A little bit about this site</h4>
               <p>Hello,<br>We are from group 01, Project End 1 (PA 1) ; The Development Team manages UMKM Websites. This website is used to promote and publish about Ulos UMKM from this village. For you, this may be a source of inspiration for a new project or something else that helps you. <br>Enjoy!</p>
             </div>
