@@ -94,7 +94,7 @@
                   @csrf
                     <div class="form-group mt-3">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" autocomplete="off" placeholder="Masukkan Nama Anda">
+                        <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" autocomplete="off" placeholder="Tuliskan Nama Anda">
                         @error('nama')
                             <div class="invalid-feedback">{{  $message }}</div>
                         @enderror

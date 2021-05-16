@@ -7,7 +7,6 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,12 +16,25 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
         <link rel="stylesheet" href="fonts/icomoon/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="css/aos.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
   <title>Join Pengrajin</title>
+  <style>
+    span{
+        color: red;
+    }
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,6 +51,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="/desa">Tentang Desa</a>
               </li>
+              </li>
                <li class="nav-item">
                 <a class="nav-link" href="/ulos">Ulos</a>
               </li>
@@ -52,56 +65,89 @@
           </div>
         </div>
     </nav>
-
-    <div class="container">
+    <section id="sopi" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8" style="font-family: 'Dancing Script', cursive;">
+          <font size="7"><center>Join Us</center></font>
+        </div>
+      </div>
+    </div>
+  </section>
+    <br>
+    <div class="container-fluid">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+      label, button{
+        font-family: 'Concert One', cursive;
+      }
+    </style>
         <div class="row">
-        <center><h1>Join Us</h1></center>
-        <div class="col-md-7">
-            <div>
-                <br>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+            <div class="container card" style="width: 50rem;" class="hero rounded-3 px-5 pb-5 pt-5">
                 <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
                   @csrf
                     <div class="form-group">
                         <label>Nama Lengkap</label>
-                        <input type="text" name="nama" class="form-control" value="">
+                        <input type="text" name="nama" class="form-control" value="" autocomplete="off" placeholder="Tuliskan nama anda">
                     </div>
                     <div class="form-group mt-3">
                         <label>Alamat</label>
-                        <input type="text" name="kritik" class="form-control" value=""></input>
+                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="Tuliskan alamat anda"></input>
                     </div>
                     <div class="form-group mt-3">
                         <label>Kontak</label>
-                        <input type="text" name="saran" class="form-control" value=""></input>
+                        <input type="text" name="saran" class="form-control" value="" autocomplete="off" placeholder="Tuliskan kontak yang dapat dihubungi"></input>
                     </div>
                     <div class="form-group mt-3">
                         <label>Foto</label>
-                        <input type="file" name="saran" class="form-control" value=""></input>
+                        <input type="file" name="gambar" class="form-control" placeholder="Masukkan foto">
                     </div>
                     <div class="form-group mt-3">
                     <label>Kerajinan yang dapat dibuatkan</label>
                     <select name="kerajinan" class="form-control">
                         <option value="">Pilih Keterampilan</option>
-                        <option>Ulos Batak Toba</option>
-                        <option>Ulos Batak Karo</option>
-                        <option>Ulos Batak Toba dan Karo (pewarna sintesis)</option>
-                        <option>Ulos Batak Toba dan Karo (pewarna alami)</option>
+                        <option value="">Ulos Batak Karo</option>
+                        <option value="">Ulos Batak Karo</option>
+                        <option value="">Ulos Batak Toba dan Karo (pewarna sintesis)</option>
+                        <option value="">Ulos Batak Toba dan Karo (pewarna alami)</option>
                     </select>
-                </div>
+                    </div>
+                    <br>
                     <div class="form-group mt-3">
-                    <button type="submit" class="btn btn-success">Simpan</button>
+                    <button type="submit" style="float: right;" class="btn btn-primary" style='font-size:16px'><i class='far fa-paper-plane'></i> Simpan</button>
                     </div>
                 </form>
+                <br>
             </div>
             </div>
-
             <div class="col-md-1"></div>
-            <div class="col-md-4">
-              
-            </div>
-
+            <div class="col-md-2">
+              <div>
+                <label><h4>Contact Us</h4></label>
+                <br>
+                    <div class="form-group mt-3">
+                        <label><i class="fab fa-whatsapp"></i> Whatsapp</label>
+                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="+62822-7389-6001" disabled>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label><i class="fas fa-envelope-open-text"></i> Email</label>
+                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="raja.sondang@gmail.com" disabled>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label><i class="fas fa-sms"></i> SMS</label>
+                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="+62822-7389-6001" disabled>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label><i class="fal fa-phone-rotary"></i> Telepon</label>
+                        <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="+62822-7389-6001" disabled>
+                    </div>
+                </div>
         </div>
     </div>
-
+    <br>
     <center>
     <footer  class="bg-dark text-light"> 
       <br>          

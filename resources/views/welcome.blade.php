@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Icon" class="rounded-circle" href="css/Image/logo.png">
     <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
@@ -23,7 +24,7 @@
     <!--Navbar-->
     <nav class="navbar navbar-light bg-light">
       <div class="container m-3">
-        <span class="navbar-brand mb-0" style="font-size: 40px" ><img src="css/Image/logo.png" class="rounded-circle" style="width: 50px;" alt=""> DESA SUHISUHI</span>
+        <span class="navbar-brand mb-0" style="font-size: 40px" >DESA SUHISUHI</span>
       </div>
     </nav>
     <!--Akhir Navbar-->

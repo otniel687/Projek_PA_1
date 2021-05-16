@@ -10,6 +10,7 @@
        font-weight: bold;
      }
     </style>
+    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
     <section id="pengrajin" class="d-flex align-items-center">
       <div class="container p-4 p-md-5 mb-4 mt-5 text-white rounded" style="color: #fff;  background-size: cover;">
         <div class="col-md-8 px-0">
