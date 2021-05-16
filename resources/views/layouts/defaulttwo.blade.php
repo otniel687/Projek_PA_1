@@ -37,7 +37,7 @@
               </li>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="{{asset('/ulos')}}">Ulos</a>
+                <a class="nav-link" href="{{asset('/data_web1')}}">Ulos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
