@@ -11,7 +11,13 @@ class ProdukController extends Controller
     public  function index()
     {
         $jenis_ulos = DB::table('jenis_ulos')->get();
-        return view('produk.index', ['jenis_ulos' => $jenis_ulos]);
+        $gambar = DB::table('picture')
+        ->select('picture.*','picture.gambar')->limit(71)->orderBy('created_at')
+        ->paginate();
+        return view('produk.index', [
+            'jenis_ulos' => $jenis_ulos,
+            'gambar' => $gambar
+            ]);
     }
     public function home()
     {

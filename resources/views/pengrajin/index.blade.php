@@ -6,16 +6,15 @@
     @section('header')
     <style>
      .s{
-       font-family: monospace;
        color: yellow;
        font-weight: bold;
      }
     </style>
     <section id="pengrajin" class="d-flex align-items-center">
-      <div class="container p-4 p-md-5 mb-4 text-white rounded" style="color: #fff;  background-size: cover;">
+      <div class="container p-4 p-md-5 mb-4 mt-5 text-white rounded" style="color: #fff;  background-size: cover;">
         <div class="col-md-8 px-0">
           <h1 class="display-4 fst-italic">Pembuat Yang Handal Dengan Hasil Yang Spesial.</h1>
-          <p class="lead my-5">
+          <p class="lead ">
             Pembuatan ulos tidak di buat dengan asal asalan, perlu skill yang cukup bagus dan memiliki ketelitian dalam pembuatannya. Maka perlunya pengerajin yang handal
             untuk membuat dalam pembuatan ulos. Beberapa pengerajin yang ada di Desa Suhisuhi dapat membantu anda memilih produk yang tepat untuk anda.
           </p><br>
@@ -48,7 +47,7 @@
           <center>
           <div class = "row">
             @foreach($data as $pr)
-              <div class = "col-md-6">
+              <div class = "col-md-6 mb-5">
                   <div class="" style="width: 13rem;">
                     <img src="{{ url('image') }}/{{ $pr->foto }}"  class="bd-placeholder-img rounded-circle" width="210" height="210">
                     <div class="card-body">

@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\DesaController@home');
 Route::resource('/desa', 'App\Http\Controllers\DesaController');
-Route::get('/ulos', 'App\Http\Controllers\UlosController@ulos');
+Route::get('/ulos', 'App\Http\Controllers\UlosController@index');
 Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
 Route::get('/ulos/karo', 'App\Http\Controllers\UlosController@karo');
 Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
