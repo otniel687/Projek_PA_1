@@ -94,22 +94,22 @@
                   @csrf
                     <div class="form-group mt-3">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control" value="">
+                        <input type="text" name="nama" class="form-control" value="" placeholder="Masukkan Nama Anda">
                     </div>
                     <div class="form-group mt-3">
                         <label>Kritik</label>
-                        <textarea type="text" name="kritik" class="form-control" value="" cols="30" rows="5"></textarea>
+                        <textarea type="text" name="kritik" class="form-control" value="" placeholder="Tuliskan kritik anda terhadap website"></textarea>
                     </div>
                     <div class="form-group mt-3">
                         <label>Saran</label>
-                        <textarea type="text" name="saran" class="form-control" value="" cols="30" rows="5"></textarea>
+                        <textarea type="text" name="saran" class="form-control" value="" placeholder="Tuliskan saran anda yang dapat membantu dalam pengembangan situs web"></textarea>
                     </div>
                     <br>
                     <div class="form-group mt-3">
-                    <button type="submit" class="btn btn-success">Simpan</button>
+                    <button type="submit" style="float: right;" class="btn btn-primary" style='font-size:16px'><i class='far fa-paper-plane'></i> Simpan</button>
                     </div>
-                    <br>
                 </form>
+                <br>
             </div>
             </div>
         </div>
