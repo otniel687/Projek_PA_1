@@ -42,6 +42,12 @@ class KritikController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'nama' => 'required',
+            'kritik' => 'required|max:255',
+            'saran' => 'required|max:255',
+        ]);
+
         Pengguna::create([
             'nama' => $request->nama,
             'kritik' => $request->kritik,

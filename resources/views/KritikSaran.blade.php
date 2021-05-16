@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
         <link rel="stylesheet" href="fonts/icomoon/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -87,22 +87,32 @@
     </style>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-8">
+            <div class="col-md-6">
             <div class="container card" style="width: 50rem;" class="hero rounded-3 px-5 pb-5 pt-5">
                 <br>
                 <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
                   @csrf
                     <div class="form-group mt-3">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control" value="" placeholder="Masukkan Nama Anda">
+                        <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" autocomplete="off" placeholder="Masukkan Nama Anda">
+                        @error('nama')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-group mt-3">
                         <label>Kritik</label>
-                        <textarea type="text" name="kritik" class="form-control" value="" placeholder="Tuliskan kritik anda terhadap website"></textarea>
+                        <textarea type="text" name="kritik" class="form-control  @error('kritik') is-invalid @enderror" value="{{ old('kritik') }}" autocomplete="off" placeholder="Tuliskan kritik anda terhadap website"></textarea>
+                        @error('kritik')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
+
                     </div>
                     <div class="form-group mt-3">
                         <label>Saran</label>
-                        <textarea type="text" name="saran" class="form-control" value="" placeholder="Tuliskan saran anda yang dapat membantu dalam pengembangan situs web"></textarea>
+                        <textarea type="text" name="saran" class="form-control @error('saran') is-invalid @enderror" value="{{ old('saran') }}" autocomplete="off" placeholder="Tuliskan saran anda yang dapat membantu dalam pengembangan situs web"></textarea>
+                        @error('saran')
+                            <div class="invalid-feedback">{{  $message }}</div>
+                        @enderror
                     </div>
                     <br>
                     <div class="form-group mt-3">
