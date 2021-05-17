@@ -123,7 +123,7 @@
 
                     <div class="form-group mt-3">
                     <label>Kerajinan yang dapat dibuatkan</label>
-                    <select name="kerajinan" class="form-control @error('kerajinan') is-invalid @enderror" value="{{ old('kerajinan') }}">
+                    <select name="kerajinan" class="form-control @error('kerajinan') is-invalid @enderror" value="{{ old('kerajinan') }}" autocomplete="off">
                         <option value="">Pilih Keterampilan</option>
                         <option value="Ulos Batak Toba">Ulos Batak Toba</option>
                         <option value="Ulos Batak Karo">Ulos Batak Karo</option>

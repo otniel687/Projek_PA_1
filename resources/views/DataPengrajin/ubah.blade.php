@@ -78,10 +78,6 @@
                 <form  enctype="multipart/form-data" action="/pengrajin/update/{{ $pengrajin->id }}" method="post">
                     {{ csrf_field() }}
                     <div class="form-group mt-3">
-                        <label>ID</label>
-                        <input type="text" name="id_pengrajin" class="form-control" value="{{ $pengrajin->id_pengrajin }}">
-                    </div>
-                    <div class="form-group mt-3">
                         <label>Nama</label>
                         <input type="text" name="nama" class="form-control" value="{{ $pengrajin->nama }}">
                     </div>

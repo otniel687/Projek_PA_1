@@ -52,7 +52,8 @@ class PengrajinController extends Controller
             'foto' => 'required',
         ]);
 
-        Pengrajin::create([
+        if ($request->file('foto')==NULL) {
+            Pengrajin::create([
             'nama' => $request->nama,
             'alamat' => $request->alamat,
             'kontak' => $request->kontak,
@@ -60,7 +61,24 @@ class PengrajinController extends Controller
             'foto'=> $request->foto
         ]);
 
-        return redirect('/halamanpengrajin');
+    } else {
+        $nama = $request->nama;
+        $alamat = $request->alamat;
+        $kontak = $request->kontak;
+        $kerajinan = $request->kerajinan;
+        $foto = $request->file('foto');
+        $NamaFoto = time().'.'.$foto->extension();
+        $foto->move(public_path('foto'),$NamaFoto);
+
+        $pengrajin = new Pengrajin();
+        $pengrajin->nama = $nama;
+        $pengrajin->alamat = $alamat;
+        $pengrajin->kontak = $kontak;
+        $pengrajin->kerajinan = $kerajinan;
+        $pengrajin->foto = $NamaFoto;
+        $pengrajin->save();
+    }
+        return redirect('/halamanpengrajin')->with('success', 'Data Berhasil Ditambahkan!');
     }
 
     /**
@@ -97,6 +115,14 @@ class PengrajinController extends Controller
     public function update(Request $request, $id)
     {
         //
+            Pengrajin::create([
+            'nama' => $request->nama,
+            'alamat' => $request->alamat,
+            'kontak' => $request->kontak,
+            'kerajinan' => $request->kerajinan,
+            'foto'=> $request->foto
+        ]);
+
         if ($request->file('foto')==NULL) {
             $pengrajin = Pengrajin::find($id);
             $pengrajin->nama = $request->nama;

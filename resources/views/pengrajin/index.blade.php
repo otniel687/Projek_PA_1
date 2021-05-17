@@ -50,7 +50,7 @@
             @foreach($data as $pr)
               <div class ="col-md-3" style="margin-bottom: 10px;">
                   <div class="card" style="width: 16rem;">
-                    <img src="{{ url('image') }}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
+                    <img src="{{asset('foto')}}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
                     <div class="card-body">
                     <center><h5 class="card-title">{{$pr->nama}}</h5></center>
                         <!-- Button trigger modal -->

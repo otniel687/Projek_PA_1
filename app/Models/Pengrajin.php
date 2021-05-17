@@ -10,4 +10,5 @@ class Pengrajin extends Model
     use HasFactory;
     protected $table = 'pengrajin';
     protected $fillable = ['id', 'nama', 'alamat', 'kontak', 'kerajinan', 'foto'];
+    protected $primaryKey = 'id';
 }
