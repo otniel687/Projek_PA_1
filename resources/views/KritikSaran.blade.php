@@ -53,7 +53,7 @@
               </li>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="/ulos">Ulos</a>
+                <a class="nav-link" href="/data_web1">Ulos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/katalog">Katalog</a>
