@@ -125,7 +125,7 @@
                     <label>Kerajinan yang dapat dibuatkan</label>
                     <select name="kerajinan" class="form-control @error('kerajinan') is-invalid @enderror" value="{{ old('kerajinan') }}">
                         <option value="">Pilih Keterampilan</option>
-                        <option value="Ulos Batak Karo">Ulos Batak Toba</option>
+                        <option value="Ulos Batak Toba">Ulos Batak Toba</option>
                         <option value="Ulos Batak Karo">Ulos Batak Karo</option>
                         <option value="Ulos Batak Toba dan Karo (pewarna sintesis)">Ulos Batak Toba dan Karo (pewarna sintesis)</option>
                         <option value="Ulos Batak Toba dan Karo (pewarna alami)">Ulos Batak Toba dan Karo (pewarna alami)</option>
