@@ -71,7 +71,7 @@
                   <div class="gallery">
                     <div class="image">
                        <span><img src="{{ url('image') }}/{{ $produk->gambar }}"class="bd-placeholder-img img-produk"  ></span>
-                      <li><i>{{ $produk->nama }}</i></li>
+                      <li>{{ $produk->nama }}</li>
                     </div>
                   </div>
                 </div>
