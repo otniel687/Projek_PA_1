@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{{ asset('css/sstyle.css') }}" >
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   
   <title>@yield('title')</title>
   <style>
@@ -89,7 +90,7 @@
         </div>
     </footer>
     </center>
-
+    @yield('jscript')
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
