@@ -48,15 +48,9 @@
           <center>
           <div class = "row">
             @foreach($data as $pr)
-<<<<<<< HEAD
               <div class ="col-md-4" style="margin-bottom: 10px;">
                   <div class="card" style="width: 16rem;">
                     <img src="{{ url('image') }}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
-=======
-              <div class = "col-md-6 mb-5">
-                  <div class="" style="width: 13rem;">
-                    <img src="{{ url('image') }}/{{ $pr->foto }}"  class="bd-placeholder-img rounded-circle" width="210" height="210">
->>>>>>> e49ecf53aa26340ed0f9fdfb244938a1d5226e10
                     <div class="card-body">
                     <center><h5 class="card-title">{{$pr->nama}}</h5></center>
                         <!-- Button trigger modal -->
