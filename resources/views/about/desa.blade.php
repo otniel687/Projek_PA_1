@@ -16,7 +16,9 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="image/galeri14.jpeg" alt="" />
-
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Huta Raja Desa Lumban Suhi Suhi Toruan</h1>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img src="image/galeri13.jpeg" alt="" />
@@ -44,9 +46,6 @@
 @endsection
 
 @section('content')
-<div class="row">
-<center><p class="text-center"><h1>Desa Lumban Suhi-Suhi</h1></p></center>
-            </div>
     <!--Content-->
     <section id="content">
       <div class="container-fluid">
