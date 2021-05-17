@@ -44,11 +44,11 @@
     }
   </style>
       <section id="galery" class="galery">
-        <div class="container">
+        <div class="container-fluid">
           <center>
           <div class = "row">
             @foreach($data as $pr)
-              <div class ="col-md-4" style="margin-bottom: 10px;">
+              <div class ="col-md-3" style="margin-bottom: 10px;">
                   <div class="card" style="width: 16rem;">
                     <img src="{{ url('image') }}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
                     <div class="card-body">
@@ -97,6 +97,7 @@
                     </div>
                   </div> 
               </div>
+              <br><br>
             @endforeach
 
           </div>
