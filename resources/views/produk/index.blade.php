@@ -17,15 +17,19 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="image/katalog1.jpg" alt="" />
+                  <img src="image/UlosLarge.jpg" alt="" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>P R O D U K</h1>
+                    <p>Ulos Desa Lumban Suhi-Suhi</p>
+                  </div>
                 </div>
 
                 <div class="carousel-item">
-                  <img src="image/katalog2.jpg" alt="" />
+                  <img src="image/desacarausel.jpeg" alt="" />
                 </div>
 
                 <div class="carousel-item">
-                  <img src="image/katalog3.jpg" alt="" />
+                  <img src="image/uloscarausel.jpg" alt="" />
                 </div>
 
               </div>
@@ -51,7 +55,10 @@
         <div >
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">Produk</h1>
+                    <p class="text-center">Dengan Keahlian para pengrajin dalam menenun menjadikan Ulos tenun dari Desa Lumban Suhi-suhi <br>
+                    menjadi salah satu ciri khas dari desa tersebut. Tenunan dari para pengrajin memberikan kesan tradisional dan khas <br>
+                    untuk ulos yang dihasilakan
+                    </p>
                 </div>
             </div>
             <div class="album py-5 bg-light">
@@ -64,6 +71,7 @@
                   <div class="gallery">
                     <div class="image">
                        <span><img src="{{ url('image') }}/{{ $produk->gambar }}"class="bd-placeholder-img img-produk"  ></span>
+                      <li><i>{{ $produk->nama }}</i></li>
                     </div>
                   </div>
                 </div>
