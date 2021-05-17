@@ -46,7 +46,7 @@
       <section id="galery" class="galery">
         <div class="container-fluid">
           <center>
-          <div class = "row">
+          <div class = "row d-flex justify-content-center mb-5">
             @foreach($data as $pr)
               <div class ="col-md-3" style="margin-bottom: 10px;">
                   <div class="card" style="width: 16rem;">
