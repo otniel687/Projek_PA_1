@@ -15,15 +15,15 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="image/image1.jpg" alt="" />
+                  <img src="image/galeri14.jpeg" alt="" />
 
                 </div>
                 <div class="carousel-item">
-                  <img src="image/image2.jpg" alt="" />
+                  <img src="image/galeri13.jpeg" alt="" />
   
                 </div>
                 <div class="carousel-item">
-                  <img src="image/image3.jpg" alt="" />
+                  <img src="image/galeri15.jpeg" alt="" />
   
                 </div>
               </div>
@@ -44,7 +44,9 @@
 @endsection
 
 @section('content')
-    
+<div class="row">
+<center><p class="text-center"><h1>Desa Lumban Suhi-Suhi</h1></p></center>
+            </div>
     <!--Content-->
     <section id="content">
       <div class="container-fluid">
