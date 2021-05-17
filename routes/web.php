@@ -24,14 +24,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\DesaController@home');
 Route::resource('/desa', 'App\Http\Controllers\DesaController');
-Route::get('/ulos', 'App\Http\Controllers\UlosController@ulos');
+Route::get('/ulos', 'App\Http\Controllers\UlosController@index');
 Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
 Route::get('/ulos/karo', 'App\Http\Controllers\UlosController@karo');
 Route::get('/katalog', 'App\Http\Controllers\ProdukController@index');
 Route::get('/halamanpengrajin', 'App\Http\Controllers\HalamanpengrajinController@index');
 Route::get('/kritik', 'App\Http\Controllers\KritikController@tampil');
 Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
-Route::get('/join', 'App\Http\Controllers\JoinController@join');
+Route::get('/join', 'App\Http\Controllers\PengrajinController@join');
+Route::post('/join/simpan', 'App\Http\Controllers\PengrajinController@store');
 Route::get('/data_web1', 'App\Http\Controllers\Web1Controller@index');
 Route::get('/data_web2', 'App\Http\Controllers\Web2Controller@batak');
 Route::get('/data_web3', 'App\Http\Controllers\Web3Controller@batak');

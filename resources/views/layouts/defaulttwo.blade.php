@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
     <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
+    <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
     <title> @yield('title') | Desa Suhisuhi</title>
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <img src="{{asset('css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
-          <h3 class="navbar-brand" href="#">DESA SUHISUHI</h3>
+          <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,7 +38,7 @@
               </li>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="{{asset('/data_web1')}}">Ulos</a>
+                <a class="nav-link" href="{{asset('/ulos')}}">Ulos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
@@ -67,6 +67,7 @@
     
     <!--Akhir content -->
 
+    @yield('penjelasan')
 
     <!--Jenis-->
     @yield('jenis')
@@ -81,12 +82,12 @@
      <!--Footer-->
      <section id="footer" class="bg-dark text-light">
       <div class="row" style="margin-bottom: 70px; margin-top: 35px">
-        <div class="col-md-1"></div>
-        <div class="col-md-4" style="color: cornflowerblue; size:'7';">
+        <div class="col-md-1 me-3"></div>
+        <div class="col-md-4 " style="color: cornflowerblue; size:'7';">
           <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village </p></font>
         </div>
         <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-        <div class="col-md-3" style="">
+        <div class="col-md-3 " style="">
           <div class="referens">
           <h2 style="color:darkcyan">Link Terkait</h2><br>
             <h5><a href="https://samosirkab.go.id/">Pemkab Samosir</a></h5><br>
@@ -113,7 +114,7 @@
                 </a>
                 &nbsp;&nbsp;&nbsp;
                 <a href="/" class="m-all-1">
-                    <img alt="Logo Desa Suhi-Suhi" width="60" src="img/logo2.png">
+                    <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
                 </a>
             </div>
             <br>
@@ -130,7 +131,7 @@
     </center>
     </section>
     <!--Akhir Footer-->
-    
+    @yield('script')
     <script src="{{asset('js/bootstrap.bundle.min.js')}} "></script>
     <script src="{{asset('js/script.js')}} "></script>
     <script src="{{asset('js/KatalogScript.js')}} "></script>

@@ -4,6 +4,7 @@
 
     <!--Carousel-->
     @section('header')
+    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
     <article class="" id="carousel">
       <div>
         <div class="bd-example">
@@ -56,13 +57,13 @@
             <div class="album py-5 bg-light">
         <div class="container-fluid">
           <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 d-flex justify-content-center g-3 ">
-          @foreach($jenis_ulos as $jenis_ulos)
+          @foreach($produk as $produk)
             <div class="col ">
               <div class="card shadow-sm ">
                 <div class="wrapper">
                   <div class="gallery">
                     <div class="image">
-                       <span><img src="{{ url('gambar') }}/{{ $jenis_ulos->gambar }}"class="bd-placeholder-img img-produk"  ></span>
+                       <span><img src="{{ url('image') }}/{{ $produk->gambar }}"class="bd-placeholder-img img-produk"  ></span>
                     </div>
                   </div>
                 </div>
@@ -71,34 +72,35 @@
                 <div class="card-body">                  
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group"> 
-                      <button type="button" class="btn btn-sm btn-outline-primary"  data-bs-toggle="modal" data-bs-target="#produk0{{ $jenis_ulos->id }}">More</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>
 
                       <!-- Modal -->
-                      <div class="modal fade" id="produk0{{ $jenis_ulos->id }}" tabindex="-1" aria-labelledby="produk0Label" aria-hidden="true">
+                      <div class="modal fade" id="produk0{{ $produk->id }}" tabindex="-1" aria-labelledby="produk0Label" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="produk0Label">{{ $jenis_ulos->nama}}</h5>
+                              <h5 class="modal-title" id="produk0Label"></h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                            <h5><b> Nama Produk:</b> </h5>
+                            <div class="modal-body row">
+                              <div class="col-md-5 img-dtl">
+                                <img width="100%" src="{{asset('image')}}/{{ $produk->gambar }}" alt="not found">
+                                </div>
+                                <div class="col-md-7">
                                   <p><ul>
-                                    <li>{{ $jenis_ulos->nama }}</li>
+                                  <h5><b> <li>{{ $produk->nama }}</li></b> </h5>
+                                  <hr size="6" />
                                   </ul></p>
-                            <h5><b>Harga pada kisaran:</b> </h5>
                                   <p><ul>
-                                    <li>{{ $jenis_ulos-> harga }}</li>
+                                    <li>{{ $produk->kontak1 }}</li>
+                                    <li>{{ $produk->kontak2 }}</li>
                                   </ul></p>
-                            <h5><b> Deskripsi: </b></h5>
+                                  
                                   <p><ul>
-                                    <li>{{ $jenis_ulos->deskripsi }}</li>
+                                  <hr />
+                                    <li>{{ $produk-> harga }}</li>
                                   </ul></p>
-                            <h5><b> Kontak yang bisa dihubungi: </b></h5>
-                                  <p><ul>
-                                    <li>Rohani Silalahi :	083131923316</li>
-                                    <li>Romula Situmorang : 081919931339</li>
-                                  </ul></p>
+                                  </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

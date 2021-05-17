@@ -18,6 +18,7 @@ class CreateGaleryTable extends Migration
             $table->unsignedBigInteger('id_gambar');
             $table->unsignedBigInteger('id_galery');
             $table->timestamps();
+            $table->primary(['idAlbum', 'idPicture']);
         });
     }
 
