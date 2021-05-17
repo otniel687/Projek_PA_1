@@ -18,7 +18,7 @@ class CreatePengrajinTable extends Migration
             $table->string('nama')->nullable();
             $table->string('alamat',100);
             $table->string('kontak')->nullable();
-            $table->string('kerajinan',100);
+            $table->enum('kerajinan',['Ulos Batak Toba','Ulos Batak Karo', 'Ulos Batak Toba dan Karo (pewarna sintesis)', 'Ulos Batak Toba dan Karo (pewarna alami)']);
             $table->string('foto')->nullable();
             $table->timestamps();
         });
