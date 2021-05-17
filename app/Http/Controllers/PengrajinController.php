@@ -99,7 +99,6 @@ class PengrajinController extends Controller
         //
         if ($request->file('foto')==NULL) {
             $pengrajin = Pengrajin::find($id);
-            $pengrajin->id_pengrajin = $request->id_pengrajin;
             $pengrajin->nama = $request->nama;
             $pengrajin->alamat = $request->alamat;
             $pengrajin->kontak = $request->kontak;
@@ -114,14 +113,12 @@ class PengrajinController extends Controller
             $Namafoto = time().'.'.$foto->extension();
             $foto->move(public_path('foto'), $Namafoto);
     
-            $id_pengrajin = $request->id_pengrajin;
             $nama = $request->nama;
             $alamat = $request->alamat;
             $kontak = $request->kontak;
             $kerajinan = $request->kerajinan;
     
             $pengrajin = Pengrajin::find($id);
-            $pengrajin->id_pengrajin = $request->id_pengrajin;
             $pengrajin->nama = $request->nama;
             $pengrajin->alamat = $request->alamat;
             $pengrajin->kontak = $request->kontak;

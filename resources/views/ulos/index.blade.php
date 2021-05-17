@@ -1,4 +1,4 @@
-@extends('layouts.defaulttwo')
+@extends('layouts.defaultthree')
 @section('title','Ulos')
 @section('header')
 
