@@ -115,13 +115,6 @@ class PengrajinController extends Controller
     public function update(Request $request, $id)
     {
         //
-            Pengrajin::create([
-            'nama' => $request->nama,
-            'alamat' => $request->alamat,
-            'kontak' => $request->kontak,
-            'kerajinan' => $request->kerajinan,
-            'foto'=> $request->foto
-        ]);
 
         if ($request->file('foto')==NULL) {
             $pengrajin = Pengrajin::find($id);
