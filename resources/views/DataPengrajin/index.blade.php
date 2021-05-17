@@ -23,7 +23,7 @@
                     <tbody>
                         @foreach($data as $suhi)
                         <tr>
-                            <th scope='row'>{{ $suhi->id_pengrajin }}</th>
+                            <th scope='row'>{{ $suhi->id }}</th>
                             <td>{{ $suhi->nama }}</td>
                             <td>{{ $suhi->alamat }}</td>
                             <td>{{ $suhi->kontak }}</td>

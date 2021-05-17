@@ -60,7 +60,7 @@ class PengrajinController extends Controller
             'foto'=> $request->foto
         ]);
 
-        return redirect('/');
+        return redirect('/halamanpengrajin');
     }
 
     /**

@@ -25,6 +25,7 @@
 @endsection
 @section('footer')
     <section id="footer" class="bg-dark text-light">
+    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
       <div>
         <br> <br>
           <div class="row">

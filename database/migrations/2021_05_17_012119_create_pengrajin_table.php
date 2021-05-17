@@ -15,10 +15,9 @@ class CreatePengrajinTable extends Migration
     {
         Schema::create('pengrajin', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_pengrajin');
-            $table->string('nama');
+            $table->string('nama')->nullable();
             $table->string('alamat',100);
-            $table->string('kontak');
+            $table->string('kontak')->nullable();
             $table->string('kerajinan',100);
             $table->string('foto')->nullable();
             $table->timestamps();
