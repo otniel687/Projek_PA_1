@@ -96,7 +96,7 @@
                     <div class="form-group mt-3">
                         <label>Foto</label>
                         <input type="file" name="foto" class="form-control" value=" $pengrajin->foto">
-                        <img src="{{url('image')}}/{{ $pengrajin->foto }}" alt="Foto Pengrajin" style="max-width:100px; margin-top:20px;">
+                        <img src="{{asset('foto')}}/{{ $pengrajin->foto }}" alt="Foto Pengrajin" style="max-width:100px; margin-top:20px;">
                     </div>
                     <div class="form-group mt-3">
                     <br><br>
