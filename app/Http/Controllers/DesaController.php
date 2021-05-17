@@ -11,7 +11,16 @@ class DesaController extends Controller
     
     public function home()
     {
-        return view('layouts.defaultone');
+        $dashboard = Desa::find(12);
+        $footer = Desa::find(13);
+        $web = Desa::find(14);
+        $logo = Desa::find(15);
+        return view('layouts.defaultone',[
+            'dashboard'=>$dashboard,
+            'footer'=>$footer,
+            'web'=>$web,
+            'logo'=>$logo,
+        ]);
     }
 
     public function index()
@@ -30,4 +39,9 @@ class DesaController extends Controller
             'video'=>$video
         ], compact('desa'));
     }
+    // public function show(
+    //     {
+
+    //     }
+    // )
 }

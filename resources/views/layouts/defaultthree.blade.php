@@ -134,6 +134,7 @@
     @yield('script')
     <script src="{{asset('js/bootstrap.bundle.min.js')}} "></script>
     <script src="{{asset('js/script.js')}} "></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="{{asset('js/KatalogScript.js')}} "></script>
   </body>
 </html>
