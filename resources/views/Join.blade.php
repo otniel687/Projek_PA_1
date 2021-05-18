@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
         <link rel="stylesheet" href="fonts/icomoon/style.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }} ">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="css/aos.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
   <title>Join Pengrajin</title>
   <style>
     span{
@@ -37,34 +37,43 @@
   </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="{{asset('css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+          <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/">Home</a>
+                <a class="nav-link " aria-current="page" href="{{url('/')}} ">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/desa">Tentang Desa</a>
+                <a class="nav-link" href="{{url('/desa')}}">Tentang Desa</a>
               </li>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="/data_web1">Ulos</a>
+                <a class="nav-link" href="{{asset('/ulos')}}">Ulos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/katalog">Katalog</a>
+                <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/halamanpengrajin">Tentang Pengrajin</a>
+                <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item btn btn-info tombol" href="/login">Login Admin</a>
               </li>
             </ul>
           </div>
         </div>
-    </nav>
+        <br>
+      </nav>
+    </header>
+    <!--Akhir Navbar-->
     <section id="sopi" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
@@ -83,10 +92,9 @@
         font-family: 'Concert One', cursive;
       }
     </style>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-6">
-            <div class="container card" style="width: 50rem;" class="hero rounded-3 px-5 pb-5 pt-5">
+        <div class="row join-us">
+            <div class="col-md-9">
+            <div class="container card" style="width: 50rem;" class="hero rounded px-5 pb-5 pt-5">
                 <form enctype="multipart/form-data" action="/join/simpan" method="post">
                   @csrf
                     <div class="form-group">
@@ -143,7 +151,6 @@
                 <br>
             </div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-2">
               <div>
                 <label><h4>Contact Us</h4></label>
@@ -193,16 +200,26 @@
         </div>
     </footer>
     </center>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}} "></script>
+    <script src="{{asset('js/script.js')}} "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="{{asset('js/KatalogScript.js')}} "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+    <script>
+        //message with toastr
+        @if(session()-> has('success'))
+        
+            toastr.success('{{ session('success') }}', 'BERHASIL!'); 
+
+        @elseif(session()-> has('error'))
+
+            toastr.error('{{ session('error') }}', 'GAGAL!'); 
+            
+        @endif
+    </script>
   </body>
 </html>

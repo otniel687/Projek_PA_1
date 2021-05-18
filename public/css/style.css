@@ -503,6 +503,9 @@ a i {
         width: 560px;
         height: 320px;
     }
+    .join-us .col-md-2 {
+        margin-top: 50px;
+    }
 }
 
 @media (max-height: 500px) {
@@ -564,6 +567,9 @@ a i {
     #footer .col-md-3 {
         margin-left: 50px;
         margin-top: 30px;
+    }
+    .join-us .col-md-2 {
+        margin-top: 50px;
     }
 }
 

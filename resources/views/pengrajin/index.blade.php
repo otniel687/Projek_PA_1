@@ -41,9 +41,9 @@
       <section id="galery" class="galery">
         <div class="container-fluid">
           <center>
-          <div class = "row d-flex justify-content-center mb-5">
+          <div class = "row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center m-3d-flex justify-content-center mb-5">
             @foreach($data as $pr)
-              <div class ="col-md-3" style="margin-bottom: 10px;">
+              <div class ="col" style="margin-bottom: 10px;">
                   <div class="card" style="width: 16rem;">
                     <img src="{{asset('foto')}}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
                     <div class="card-body">
