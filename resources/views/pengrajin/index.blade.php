@@ -21,7 +21,7 @@
           <br>
           <div class="s">
           <b>Khusus Pengrajin,<br>
-          Jika ingin bergabung dengan kami, hanya mengisi data yang ada pada tombol dibawah ini.</b><br>
+          Jika ingin bergabung, hanya mengisi data yang ada pada tombol dibawah ini.</b><br>
           <a class="navbar-brand" href="/join">          
           <button class="btn-danger mt-3" href="/join"><i class="fas fa-hand-point-right"></i> Bergabunglah dengan kami</button></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +38,33 @@
 <!--Pengerajin -->
 @section('content')
   <style>
-    h1,p {
-      font-family: 'New Tegomin', serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+}
+    .card {
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     }
+input:focus {
+  border-width: 0 0 4px;
+}
+.btn {
+  background-color: #1685e6;
+  color: white;
+  font-weight: bold;
+  width: 8rem;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+.btn:hover {
+  background-color: rgb(11, 248, 213);
+  color: rgb(223, 39, 214);
+}
+    
   </style>
       <section id="galery" class="galery">
         <div class="container-fluid">
