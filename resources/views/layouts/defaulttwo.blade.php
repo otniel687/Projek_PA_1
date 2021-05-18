@@ -18,16 +18,7 @@
     <!--Lightbox-->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
-  <style>
-            .btn {
-              color: white;
-              border-radius: 20px;
-            }
-            .btn:hover {
-              background-color: rgb(11, 248, 213);
-              color: rgb(223, 39, 214);
-            }
-          </style>
+
   <body>
     <!--Navbar-->
     <header>
