@@ -4,7 +4,6 @@
 
     <!--Carousel-->
     @section('header')
-    <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
     <article class="" id="carousel">
       <div>
         <div class="bd-example">

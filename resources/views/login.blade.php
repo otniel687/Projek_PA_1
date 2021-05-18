@@ -24,9 +24,9 @@
     </nav>
 
     <br><br><br><br>
-    <div class="container card" style="width: 30rem;">
+    <div class="container card" style="width: 20rem;">
     <center>
-        <h2><i class="fas fa-user"></i>&nbsp;&nbsp;<b class="title" style="color: navy;">Login Admin</b></h2>
+        <h4><i class="fas fa-user"></i>&nbsp;&nbsp;<b class="title" style="color: navy;">Login Admin</b></h4>
         <hr>
         </center><br>
     <form class="form container" method="post" action="{{route('login')}}">
