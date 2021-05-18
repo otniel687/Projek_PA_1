@@ -4,6 +4,7 @@
 
     <!--Carousel-->
     @section('header')
+    <link rel="stylesheet" href="{{ asset('css/style2.css') }}" >
     <article class="" id="carousel">
       <div>
         <div class="bd-example">
@@ -79,7 +80,7 @@
                 <div class="card-body">                  
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group"> 
-                      <button type="button" class="btn btn-sm btn-outline-primary"  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>
+                      <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>
 
                       <!-- Modal -->
                       <div class="modal fade" id="produk0{{ $produk->id }}" tabindex="-1" aria-labelledby="produk0Label" aria-hidden="true">

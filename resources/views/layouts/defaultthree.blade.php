@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
+    <link rel="stylesheet" href="{{ asset('css/style1.css') }}" >
     <title> @yield('title') | Desa Suhisuhi</title>
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
@@ -97,6 +97,16 @@
         </div>
         <div class="col-md-3">
           <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
+          <style>
+            .btn {
+              color: white;
+              border-radius: 20px;
+            }
+            .btn:hover {
+              background-color: rgb(11, 248, 213);
+              color: rgb(223, 39, 214);
+            }
+          </style>
           <br>
           <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
           <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>

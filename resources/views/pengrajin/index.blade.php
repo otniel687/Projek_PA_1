@@ -4,6 +4,7 @@
 
 <!--Header-->
     @section('header')
+    <link rel="stylesheet" href="{{ asset('css/style2.css') }}" >
     <style>
      .s{
        color: yellow;
@@ -37,35 +38,6 @@
 
 <!--Pengerajin -->
 @section('content')
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-size: cover;
-}
-    .card {
-      margin: 0 auto;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
-input:focus {
-  border-width: 0 0 4px;
-}
-.btn {
-  background-color: #1685e6;
-  color: white;
-  font-weight: bold;
-  width: 8rem;
-  border-radius: 20px;
-  letter-spacing: 3px;
-}
-.btn:hover {
-  background-color: rgb(11, 248, 213);
-  color: rgb(223, 39, 214);
-}
-    
-  </style>
       <section id="galery" class="galery">
         <div class="container-fluid">
           <center>
@@ -77,7 +49,7 @@ input:focus {
                     <div class="card-body">
                     <center><h5 class="card-title">{{$pr->nama}}</h5></center>
                         <!-- Button trigger modal -->
-                        <center><button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{$pr->id}}">Profil</button></center>
+                        <center><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal{{$pr->id}}">Profil</button></center>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal{{$pr->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
