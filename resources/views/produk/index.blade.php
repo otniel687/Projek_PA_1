@@ -71,16 +71,14 @@
                   <div class="gallery">
                     <div class="image">
                        <span><img src="{{ url('image') }}/{{ $produk->gambar }}"class="bd-placeholder-img img-produk"  ></span>
-                      <li>{{ $produk->nama }}</li>
+                      <li class="text-center">{{ $produk->nama }}</li>
                     </div>
                   </div>
                 </div>
-                
-
                 <div class="card-body">                  
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group"> 
-                      <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>
+                      <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>
 
                       <!-- Modal -->
                       <div class="modal fade" id="produk0{{ $produk->id }}" tabindex="-1" aria-labelledby="produk0Label" aria-hidden="true">
@@ -91,7 +89,7 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body row">
-                              <div class="col-md-5 img-dtl">
+                              <div class="col-md-5 img">
                                 <img width="100%" src="{{asset('image')}}/{{ $produk->gambar }}" alt="not found">
                                 </div>
                                 <div class="col-md-7">

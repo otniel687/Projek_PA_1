@@ -54,7 +54,7 @@ class KritikController extends Controller
             'saran' => $request->saran
         ]);
 
-        return redirect('/');
+        return redirect('/kritik')->with('success', 'Kritik dan Saran Anda Berhasil Di Masukkan!');
     }
 
     /**

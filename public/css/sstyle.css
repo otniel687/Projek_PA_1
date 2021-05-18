@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 body {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     background-image: url("../img/bg1.jpeg");
     background-size: cover;
 }
 
 h1 {
-    font-family: 'Courgette', cursive;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: "Courgette", cursive;
+    font-family: "Gothic A1", sans-serif;
 }
 
 thead {
@@ -110,7 +110,7 @@ label {
 input:focus {
     border-width: 0 0 4px;
 }
-.btn {
+/* .btn {
     color: whitesmoke;
     font-weight: bold;
     border-radius: 20px;
@@ -118,4 +118,4 @@ input:focus {
 }
 .btn:hover {
     background-color: rgb(228, 203, 91);
-}
+} */
