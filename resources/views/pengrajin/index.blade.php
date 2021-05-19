@@ -23,7 +23,7 @@
           <b>Khusus Pengrajin,<br>
           Jika ingin bergabung, hanya mengisi data yang ada pada tombol dibawah ini.</b><br>
           <a class="navbar-brand" href="/join">          
-          <button class="btn-danger mt-3" href="/join"><i class="fas fa-hand-point-right"></i> Bergabunglah dengan kami</button></a>
+          <button class="btn btn-danger mt-3" href="/join"><i class="fas fa-hand-point-right"></i> Bergabunglah dengan kami</button></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

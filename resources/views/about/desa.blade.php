@@ -15,17 +15,17 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="image/galeri14.jpeg" alt="" />
+                  <img src="image/desacarausel1.jpeg" alt="" />
                   <div class="carousel-caption d-none d-md-block">
                     <h1>Huta Raja Desa Lumban Suhi Suhi Toruan</h1>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="image/galeri13.jpeg" alt="" />
+                  <img src="image/desacarausel2.jpeg" alt="" />
   
                 </div>
                 <div class="carousel-item">
-                  <img src="image/galeri15.jpeg" alt="" />
+                  <img src="image/desacarausel3.jpeg" alt="" />
   
                 </div>
               </div>

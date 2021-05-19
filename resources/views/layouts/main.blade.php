@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="Icon" class="rounded-circle" href="{{asset('img/logo2.png')}} ">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -71,7 +71,7 @@
     <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                    <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
+                    <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
                 </a>
                 &nbsp;&nbsp;&nbsp;
                 <a href="/" class="m-all-1">

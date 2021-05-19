@@ -52,7 +52,7 @@
     <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                    <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
+                    <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
                 </a>
                 &nbsp;&nbsp;&nbsp;
                 <a href="/" class="m-all-1">

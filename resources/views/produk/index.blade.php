@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="carousel-item">
-                  <img src="image/desacarausel.jpeg" alt="" />
+                  <img src="image/UlosDesign.jpeg" alt="" />
                 </div>
 
                 <div class="carousel-item">

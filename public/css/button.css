@@ -42,3 +42,6 @@ input:focus {
 #footer .btn:hover {
     background-color: rgb(228, 203, 91);
 }
+#pengrajin .btn:hover {
+    background-color: #ba000d;
+}

@@ -66,7 +66,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="Image/{{ $ariteneng->gambar }}" alt="" />
+                <img class="img-fluib" src="gambar/{{ $ariteneng->gambar }}" alt="" />
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="Image/{{ $gatip->gambar }}" alt="" />
+                <img class="img-fluib" src="gambar/{{ $gatip->gambar }}" alt="" />
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
             <div class="card mb-4 shadow-sm">
              
               <div class="card figure">
-                <img class="img-fluib" src="image/{{ $beka_buluh->gambar }}" alt="" />
+                <img class="img-fluib" src="gambar/{{ $beka_buluh->gambar }}" alt="" />
               </div>
             </div>
           </div>

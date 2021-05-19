@@ -9,8 +9,7 @@
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
     <!--style CSS-->
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
-    <link rel="stylesheet" href="{{ asset('css/style1.css') }}" >
-        <link rel="stylesheet" href="{{ asset('css/style2.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/button.css') }}" >
     <!--Style Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
      <!--Fancy Box-->
@@ -111,7 +110,7 @@
           <div>
             <div class="flex-c-m flex-w p-b-18">
                 <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                    <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
+                    <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
                 </a>
                 &nbsp;&nbsp;&nbsp;
                 <a href="/" class="m-all-1">
