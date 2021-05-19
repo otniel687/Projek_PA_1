@@ -4,10 +4,19 @@
     
 @section('container')
     <div class="container">
-        <div class="row">
+        <style>
+            #info{
+                float:right;
+            }
+        </style>
+       <div class="row">
             <div class="col-12">
                 <h1 class="mt-3">Data Jenis Ulos Desa Suhi-Suhi</h1>
-                <br><br>
+                <div id="info">
+                    <form method="GET">
+                        <div class="info1container d-flex"><input type="search" id="cari" size="25" name="cari"class="form-control rounded-pill " style="font-family: Arial, FontAwesome;" value="{{Request::get('cari')}}" placeholder="Cari data">&nbsp;&nbsp;<button id="bcari" class="btn btn-outline-light rounded-circle" type="submit"><i class="fas fa-search"></i></button></div>
+                    </form>
+                </div> 
                 <table class="table table-bordered table-striped" style="text-align:center">
                     <thead>
                         <tr>

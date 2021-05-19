@@ -39,6 +39,15 @@
 @section('content')
       <section id="galery" class="galery pengrajin">
         <div class="container-fluid">
+        <div>
+            <div id="info" style="float: right;">
+                    <form method="GET">
+                        <div class="info1container d-flex"><input type="search" id="cari" size="25" name="cari"class="form-control rounded-pill " style="font-family: Arial, FontAwesome;" value="{{Request::get('cari')}}" placeholder="Cari postingan pengrajin">&nbsp;&nbsp;<button id="bcari" class="btn btn-secondary rounded-circle" type="submit"><i class="fas fa-search"></i></button></div>
+                    </form>
+                </div> 
+            </div>
+            <br><br>
+            <br>
           <center>
           <div class = "row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center m-3d-flex justify-content-center mb-5">
             @foreach($data as $pr)

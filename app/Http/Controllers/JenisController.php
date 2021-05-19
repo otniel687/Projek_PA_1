@@ -12,10 +12,17 @@ class JenisController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        $data = Jenis::all();
+        if($request->has('cari')){
+            $data= Jenis::where('nama', 'LIKE','%'.$request->cari.'%')
+            ->orWhere('deskripsi', 'LIKE', '%'.$request->cari.'%')
+            ->orWhere('harga', 'LIKE', '%'.$request->cari.'%')
+            ->paginate();
+        }else{
+            $data = Jenis::paginate();
+        }
         return view('DataJUlos.index', ['data'=>$data]);
     }
 

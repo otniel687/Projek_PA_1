@@ -9,10 +9,18 @@ use App\Models\Pengrajin;
 class HalamanpengrajinController extends Controller
 {
     //
-    public  function index()
+    public  function index(Request $request)
     {
+        if($request->has('cari')){
+            $data= Pengrajin::where('nama', 'LIKE','%'.$request->cari.'%')
+            ->orWhere('alamat', 'LIKE', '%'.$request->cari.'%')
+            ->orWhere('kontak', 'LIKE', '%'.$request->cari.'%')
+            ->orWhere('kerajinan', 'LIKE', '%'.$request->cari.'%')
+            ->paginate();
+        }else{
+            $data = Pengrajin::paginate();
+        }
         $header = Desa::find(17);
-        $data = Pengrajin::all();
         return view('pengrajin.index', [
             'data'=>$data,
             'header'=>$header

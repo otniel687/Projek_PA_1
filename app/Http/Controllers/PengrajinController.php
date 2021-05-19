@@ -12,10 +12,18 @@ class PengrajinController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        $data = Pengrajin::all();
+        if($request->has('cari')){
+            $data= Pengrajin::where('nama', 'LIKE','%'.$request->cari.'%')
+            ->orWhere('alamat', 'LIKE', '%'.$request->cari.'%')
+            ->orWhere('kontak', 'LIKE', '%'.$request->cari.'%')
+            ->orWhere('kerajinan', 'LIKE', '%'.$request->cari.'%')
+            ->paginate();
+        }else{
+            $data = Pengrajin::paginate();
+        }
         return view('DataPengrajin.index', ['data'=>$data]);
     }
 
