@@ -86,7 +86,7 @@ class PengrajinController extends Controller
         $pengrajin->foto = $NamaFoto;
         $pengrajin->save();
     }
-        return redirect('/halamanpengrajin')->with('success', 'Data Berhasil Ditambahkan!');
+        return redirect('/join')->with('success', 'Data Berhasil Ditambahkan!');
     }
 
     /**
