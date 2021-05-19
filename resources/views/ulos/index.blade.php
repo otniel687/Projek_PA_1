@@ -110,8 +110,8 @@
           </div>
             @foreach( $data as $ulos)
               <h4>{{ $ulos->judul }}</h4>
-              <p>{{ $ulos->informasi}}</p>
-              <img src="image/{{ $ulos->gambar }}" alt="">
+              <p >{{ $ulos->informasi}}</p>
+              <img src="image/{{ $ulos->gambar }}" alt="" class="mb-4">
             @endforeach
             </div>
           </div>

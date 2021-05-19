@@ -1,10 +1,8 @@
-
 .btn {
-  color: whitesmoke;
-  font-weight: bold;
-  border-radius: 20px;
-  letter-spacing: 3px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .btn:hover {
-  background-color: rgb(228, 203, 91);
+    background-color: rgb(228, 203, 91);
 }

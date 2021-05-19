@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ulos extends Model
 {
     use HasFactory;
-    protected $table = 'data_web1';
+    protected $table = 'proses';
     protected $fillable = ['id', 'nama', 'informasi', 'gambar', ];
 }

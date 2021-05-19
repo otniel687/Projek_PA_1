@@ -207,6 +207,13 @@ a i {
 #galery .card img {
     height: 190px;
 }
+.pengrajin .card img {
+    height: 190px;
+}
+
+.pengrajin .card {
+    margin: auto;
+}
 
 .marketing .bulat {
     margin-bottom: 1.5rem;
@@ -553,8 +560,11 @@ a i {
         margin-top: 10px;
         text-align: center;
     }
-    #galery .card img {
+    #galery .item img {
         height: 140px;
+    }
+    .pengrajin .card img {
+        height: 180px;
     }
     #video video {
         width: 360px;

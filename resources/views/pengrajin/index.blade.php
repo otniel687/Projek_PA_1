@@ -14,10 +14,9 @@
     <section id="pengrajin" class="d-flex align-items-center">
       <div class="container p-4 p-md-5 mb-4 mt-5 text-white rounded" style="color: #fff;  background-size: cover;">
         <div class="col-md-8 px-0">
-          <h1 class="display-4 fst-italic">Pembuat Yang Handal Dengan Hasil Yang Spesial.</h1>
+          <h1 class="display-4 fst-italic">{{ $header->nama}} </h1>
           <p class="lead ">
-            Pembuatan ulos tidak di buat dengan asal asalan, perlu skill yang cukup bagus dan memiliki ketelitian dalam pembuatannya. Maka perlunya pengerajin yang handal
-            untuk membuat dalam pembuatan ulos. Beberapa pengerajin yang ada di Desa Suhisuhi dapat membantu anda memilih produk yang tepat untuk anda.
+            {!! $header->informasi !!}
           </p><br>
           <br>
           <div class="s">
@@ -38,7 +37,7 @@
 
 <!--Pengerajin -->
 @section('content')
-      <section id="galery" class="galery">
+      <section id="galery" class="galery pengrajin">
         <div class="container-fluid">
           <center>
           <div class = "row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center m-3d-flex justify-content-center mb-5">
@@ -47,9 +46,9 @@
                   <div class="card" style="width: 16rem;">
                     <img src="{{asset('foto')}}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
                     <div class="card-body">
-                    <center><h5 class="card-title">{{$pr->nama}}</h5></center>
+                    <h5 class="card-title text-center">{{$pr->nama}}</h5>
                         <!-- Button trigger modal -->
-                        <center><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal{{$pr->id}}">Profil</button></center>
+                      <button type="button" class="btn btn-success d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal{{$pr->id}}">Profil</button>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal{{$pr->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
