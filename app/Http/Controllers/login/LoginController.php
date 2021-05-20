@@ -15,10 +15,10 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        if (Auth::attempt(['email'=>$request->email,'password'=>$request->password])) {
+        if (Auth::attempt(['username'=>$request->username,'password'=>$request->password])) {
             return redirect('/pengrajin');
         }
-           return redirect('/login')->with('message','Email atau Password Salah');
+           return redirect('/login')->with('message','Username atau Password yang anda masukkan Salah');
     }
 
     public function logout(Request $request){

@@ -29,23 +29,24 @@
     <center>
         <h4><i class="fas fa-user"></i>&nbsp;&nbsp;<b class="title" style="color: navy;">Login Admin</b></h4>
         <hr>
-        </center><br>
-    <form class="form container" method="post" action="{{route('login')}}">
-    @csrf
-        <div class="loginbody">
-        <label for="username">Email</label>
-        <input id="username" class="form-control" type="email" name="email"><br>
-        <input style="display: none;" type="checkbox" id="show-password">
-        <label for="password">Password</label>
-        <input id="password" class="form-control" type="password" name="password"><br><br>
-        <center><button class="btn btn">Login</button></center>
-  
-        @if (session('message'))
+         @if (session('message'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
              <strong>{{ session('message') }}</strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         @endif
+      </center><br>
+    <form class="form container" method="post" action="{{route('login')}}">
+    @csrf
+        <div class="loginbody">
+        <label for="username">Username</label>
+        <input id="username" class="form-control" type="text" name="username"><br>
+        <input style="display: none;" type="checkbox" id="show-password">
+        <label for="password">Password</label>
+        <input id="password" class="form-control" type="password" name="password"><br><br>
+        <center><button class="btn btn">Login</button></center>
+  
+       
     </form>
 
     </div>
