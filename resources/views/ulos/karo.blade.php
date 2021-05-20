@@ -69,7 +69,7 @@
                 <h4 class="mt-2 mb-2 fw-normal">{{ $uls->nama }}</h4>
               </div>
               <div class="card figure">
-                <img class="img-fluib" src="{{asset('image/'.$uls->gambar)}}
+                <img class="img-fluib" src="{{asset('gambar/'.$uls->gambar)}}
                 " alt="">
               </div>
             </div>
@@ -93,7 +93,7 @@
         </div>
         <div class="row row-cols-1 m-auto mt-3 d-flex justify-content-center">
           <div class="col me">
-            <video controls class="rounded mx-auto d-block">
+            <video controls class="rounded mx-auto d-block  d-flex justify-content-center">
               <source src="{{ url('video') }}/{{ $video->video}}" type="video/mp4" />
             </video>
           </div>

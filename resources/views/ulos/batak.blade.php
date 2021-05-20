@@ -87,7 +87,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
           <div class="col">
-            <video controls class="rounded mx-auto d-block">
+            <video controls class="rounded mx-auto d-block  d-flex justify-content-center">
               <source src="{{ url('video') }}/{{ $video->video}}" type="video/mp4" />
             </video>
           </div>
