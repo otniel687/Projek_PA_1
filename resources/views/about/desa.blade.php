@@ -2,47 +2,43 @@
 @extends('layouts.defaultthree')
 @section('title', 'Tentang Desa')
 @section('header')
-    <!--Carousel-->
-    <article class="" id="carousel">
-      <div>
-        <div class="bd-example">
-          <center>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="image/desacarausel1.jpeg" alt="" />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h1>Huta Raja Desa Lumban Suhi Suhi Toruan</h1>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="image/desacarausel2.jpeg" alt="" />
-  
-                </div>
-                <div class="carousel-item">
-                  <img src="image/desacarausel3.jpeg" alt="" />
-  
-                </div>
+<!--Carousel-->
+<article class="" id="carousel">
+  <div>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{asset('image/desacarausel1.jpeg')}} " alt="Los Angeles" width="100%" height="" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Huta Raja Desa Lumban Suhi Suhi Toruan</h1>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
             </div>
-          </center>
+            <div class="carousel-item">
+              <img src="{{asset('image/desacarausel2.jpeg')}} " alt="Los Angeles" width="100%" height="" />
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('image/desacarausel3.jpeg')}} " alt="Los Angeles" width="100%" height="" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
-      </div>
-    </article>
-    <!--Akhir Carousel-->
+    </div>
+  </div>
+</article>
+<!--Akhir Carousel-->
 @endsection
 
 @section('content')

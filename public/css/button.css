@@ -31,11 +31,15 @@ input:focus {
     background-color: #0095a8;
     color: whitesmoke;
 }
-.produk .btn {
+
+.produk .btnMore {
+    border-radius: 25px;
+    padding: 2px 30px 2px 30px;
     background-color: #1976d2;
-    border: 30px;
+    color: whitesmoke;
 }
-.produk .btn:hover {
+
+.produk .btnMore:hover {
     background-color: #004ba0;
     color: whitesmoke;
 }

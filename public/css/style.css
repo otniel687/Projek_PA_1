@@ -320,6 +320,11 @@ a i {
     margin: 200px;
 }
 
+.join_pengerajin {
+    color: yellow;
+    font-weight: bold;
+}
+
 /*pricing*/
 .container {
     max-width: 960px;
@@ -406,7 +411,7 @@ a i {
     }
 
     #carouselExampleCaptions .carousel-item img {
-        width: 50px;
+        width: 140px;
     }
 }
 
@@ -485,7 +490,7 @@ a i {
 }
 
 #hero .play-btn:hover::after {
-    border-left: 15px solid #cda45e;
+    /* border-left: 15px solid #cda45e; */
     transform: scale(20);
 }
 

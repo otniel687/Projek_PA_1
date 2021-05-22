@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
@@ -19,7 +19,6 @@
     <!--Lightbox-->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
-
   <body>
     <!--Navbar-->
     <header>
@@ -33,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="{{url('/')}} ">Home</a>
+                <a class="nav-link " aria-current="page" href="{{url('/')}}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url('/desa')}}">Tentang Desa</a>
@@ -96,9 +95,9 @@
             <h5><a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a></h5><br>
             <h5><a href="https://www.kemenparekraf.go.id/">kemenparekraf RI</a></h5><br>
             <h5><a href="https://www.del.ac.id/">IT Del</a></h5>
-              </div>
+          </div>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 r">
           <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
           <br>
           <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>

@@ -4,38 +4,27 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="Icon" class="rounded-circle" href="css/Image/logo.png">
+        <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
 
         <!-- Icon -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
-        <link rel="stylesheet" href="fonts/icomoon/style.css">
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }} ">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-        <link rel="stylesheet" href="css/aos.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{asset('css/style.css')}} ">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <title>Join Pengrajin</title>
-  <style>
-    span{
-        color: red;
-    }
-  </style>
   </head>
   <body>
     <!--Navbar-->
@@ -75,8 +64,8 @@
     <section id="sopi" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
-        <div class="col-lg-8" style="font-family: 'Dancing Script', cursive;">
-          <font size="7"><center>Join Us</center></font>
+        <div class="col-lg-8 text-center" style="font-family: 'Dancing Script', cursive;">
+          <font  size="7">Join Us</font>
         </div>
       </div>
     </div>
@@ -85,11 +74,6 @@
     <div class="container-fluid">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <style>
-      label, button{
-        font-family: 'Concert One', cursive;
-      }
-    </style>
         <div class="row join-us">
             <div class="col-md-9">
             <div class="container card" style="width: 50rem;" class="hero rounded px-5 pb-5 pt-5">

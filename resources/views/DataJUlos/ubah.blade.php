@@ -41,22 +41,22 @@
             </div>
             <div class="navbar2">
             <div class="d-flex">
-                            <li>
-                                <a  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+                <li>
+                    <a  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }}
+                    </a>
 
-                                <div >
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                    <div >
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
             </div>
             </div>
         </div>
@@ -112,14 +112,14 @@
     <br>
     <footer  class="bg-dark text-light"> 
     <br>
-            <font size='2'>
-            <p class="stext-107 cl6 txt-center">
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script> | Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
-            </p>
-            </font>
+        <font size='2'>
+        <p class="stext-107 cl6 txt-center">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> | Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+        </p>
+        </font>
         </div>
     </footer>
     </center>
