@@ -39,9 +39,4 @@ class DesaController extends Controller
             'video'=>$video
         ], compact('desa'));
     }
-    // public function show(
-    //     {
-
-    //     }
-    // )
 }

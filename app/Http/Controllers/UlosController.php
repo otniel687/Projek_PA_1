@@ -39,7 +39,6 @@ class UlosController extends Controller
     }
     public function batak()
     {
-        // $data_web2 = DB::table('data_web2')->get();
         $ulos = DB::table('jenis_ulos')
         ->select('jenis_ulos.*')
         ->limit(8)
@@ -51,7 +50,6 @@ class UlosController extends Controller
         $header = Desa::find(7);
         $about = Desa::find(8);
         return view('ulos.batak', [
-            // 'data_web2' => $data_web2,
             'video' => $video,
             'ulos' => $ulos,
             'header' => $header,
@@ -60,7 +58,6 @@ class UlosController extends Controller
     }
     public function karo()
     {   
-        // $data_web3 = DB::table('data_web3')->get();
         $ulos = DB::table('jenis_ulos')
         ->select('jenis_ulos.*')
         ->offset(8)->limit(6)->get();
@@ -71,7 +68,6 @@ class UlosController extends Controller
         $about = Desa::find(10);
         $about2 = Desa::find(11);
         return view('ulos.karo', [
-            // 'data_web3' => $data_web3,
             'video' => $video,
             'ulos' => $ulos,
             'header' => $header,

@@ -13,15 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-// Route::get('/', function () {
-//     return view('layouts.defaultone');
-// });
-
-// Route::get('/desa', function () {
-//     return view('about.desa');
-// });
-
 Route::get('/', 'App\Http\Controllers\DesaController@home');
 Route::resource('/desa', 'App\Http\Controllers\DesaController');
 Route::get('/ulos', 'App\Http\Controllers\UlosController@index');
