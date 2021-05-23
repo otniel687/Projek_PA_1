@@ -48,7 +48,7 @@ textarea {
 #header-ulos {
     height: 90vh;
     width: 100%;
-    background: url("image/ulos_batak.jpg");
+    background: url("../css/Image/ulos_batak.jpg");
     background-size: cover;
     position: relative;
     padding: 0;
@@ -88,7 +88,7 @@ textarea {
 #pengrajin {
     height: 100vh;
     width: 100%;
-    background: url("image/pengrajin.jpeg");
+    background: url("../css/Image/pengrajin.jpg");
     background-size: cover;
     position: relative;
     padding: 0;
@@ -102,7 +102,7 @@ textarea {
 #bg-batak {
     height: 300px;
     width: 100%;
-    background: url("image/ragi_idup.jpeg");
+    background: url("../css/Image/ragi_idup.jpeg");
     background-size: cover;
     position: relative;
     padding: 0;
@@ -118,7 +118,7 @@ textarea {
 #bg-karo {
     height: 300px;
     width: 100%;
-    background: url("image/gatip.jpeg");
+    background: url("../css/Image/gatip.jpeg");
     background-size: cover;
     position: relative;
     padding: 0;
@@ -432,7 +432,7 @@ a i {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("Image/header.jpg") top center;
+    background: url("...css/Image/header.jpg") top center;
     background-size: cover;
     position: relative;
     padding: 0;
@@ -441,7 +441,7 @@ a i {
 #sopi {
     width: 100%;
     height: 30vh;
-    background: url("Image/ss.jfif") top center;
+    background: url("...css/Image/ss.jfif") top center;
     background-size: cover;
     position: relative;
     padding: 0;
