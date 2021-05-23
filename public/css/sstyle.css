@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-image: url("../images/bgmain.jpeg");
 }
 body {
-    background-size: cover; 
-    top: 0; 
-    left: 0; 
+    background-size: cover;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     background-attachment: fixed;
@@ -14,6 +14,7 @@ body {
 h1 {
     font-family: "Courgette", cursive;
     font-family: "Gothic A1", sans-serif;
+    color: whitesmoke;
 }
 .navbar {
     background-color: rgba(255, 255, 255, 0.15);
@@ -30,6 +31,7 @@ h1 {
 }
 #info {
     padding: 20px;
+    float: right;
 }
 .info1 {
     display: inline-block;
@@ -48,9 +50,9 @@ h1 {
 }
 .table {
     border: 1px solid #000000;
-  }
+}
 .table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th{
+.table-bordered > tbody > tr > th {
     border: 1px solid #000000;
 }
 tr:nth-child(odd) {
@@ -60,7 +62,7 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.6);
 }
-.table thead th { 
+.table thead th {
     background-color: #7abaee;
 }
 .item {
