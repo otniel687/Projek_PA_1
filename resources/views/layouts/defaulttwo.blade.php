@@ -98,7 +98,7 @@
       </div>
       </div>
     </div>
-     <footer  class="bg-dark text-light d-flex justify-content-center"><br>          
+     <footer class="bg-dark text-light d-flex justify-content-center"><br>          
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
@@ -116,7 +116,7 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" style="text-decoration:none" target="_blank">Kelompok 01 PA 1 - IT Del</a>
                 </p>
                 </font>
             </div>
