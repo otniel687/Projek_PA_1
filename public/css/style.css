@@ -550,6 +550,9 @@ a i {
         padding-top: 130px;
         padding-bottom: 60px;
     }
+    .album .container .home .card {
+        width: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -593,6 +596,15 @@ a i {
         margin-top: 30px;
     }
 
+    .footer-jarak {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .footer-home {
+        margin-left: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
     .footer-jarak {
         margin-left: 50px;
         margin-right: 50px;

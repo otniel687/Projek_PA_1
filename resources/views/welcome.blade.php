@@ -44,7 +44,7 @@
           <h2>Explore The Website</h2>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-smb-4 row-cols-md-3 g-3 d-flex justify-content-center">
+      <div class="row row-cols-1 row-cols-smb-4 row-cols-md-3 g-3 d-flex justify-content-center home">
 
         <div class="col">
           <div class="card shadow-sm">
