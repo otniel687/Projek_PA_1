@@ -88,7 +88,7 @@
             </div>
       </div>
       <div class="col-md-3">
-        <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
+        <a href="{{asset('/kritik')}} " class="btn btn-warning" style="width: 190px">Kritik Dan Saran</a><br>
         
         <br>
         <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>

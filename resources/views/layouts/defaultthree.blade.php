@@ -78,22 +78,21 @@
         <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village </p></font>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-      <div class="col-md-4 " style="">
+      <div class="col-md-4" style="">
         <div class="referens">
         <h2 style="color:darkcyan">Link Terkait</h2><br>
           <h5><a href="https://samosirkab.go.id/">Pemkab Samosir</a></h5><br>
           <h5><a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a></h5><br>
           <h5><a href="https://www.kemenparekraf.go.id/">kemenparekraf RI</a></h5><br>
           <h5><a href="https://www.del.ac.id/">IT Del</a></h5>
-            </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <a href="/kritik" class="btn btn-warning" style="width: 250px">Kritik Dan Saran</a><br>
-        
+      <div class="col-md-3 ">
+        <a href="{{asset('/kritik')}} " class="btn btn-warning" style="width: 190px">Kritik Dan Saran</a><br>
         <br>
-        <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
+        <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-2"></i></a>
         <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-        <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+        <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-2"></i></a>
         <a class="social mt-5" href="https://www.youtube.com/watch?v=VLNjo2LQ2XY" target="_blank"><i class="bi bi-youtube"></i></a>
       </div>
       </div>

@@ -47,14 +47,11 @@
 @section('content')
 <section class="produk">
 <div >
-  <div class="row">
-      <div class="col">
-          {!! $header->informasi !!}
-      </div>
-  </div>
+  {!! $header->informasi !!}
+
   <div class="album py-5 bg-light">
     <div class="container-fluid">
-      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 d-flex justify-content-center g-3 ">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 d-flex justify-content-center">
       @foreach($produk as $produk)
         <div class="col ">
           <div class="card shadow-sm ">
@@ -86,13 +83,14 @@
                             <h5><b> <li>{{ $produk->nama }}</li></b> </h5>
                             <hr size="6" />
                             </ul></p>
+                            <p><ul> Jika anda berminat dengan ulos ini, anda dapat menghubungi No. Dibawah ini :</ul></p>
                             <p><ul>
                               <li>{{ $produk->kontak1 }}</li>
                               <li>{{ $produk->kontak2 }}</li>
                             </ul></p>
-                            
                             <p><ul>
                             <hr />
+                              <li>Dengan kisaran harga:</li>
                               <li>{{ $produk-> harga }}</li>
                             </ul></p>
                           </div>

@@ -93,14 +93,14 @@
 <!--Video -->
 <section id="video">
   <div class="container">
-    <div class="row d-flex justify-content-center">
+    <div class="row ">
       <div class="col">
         <h2 class="text-center">Video</h2>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 m-auto mt-3">
-      <div class="col">
-        <video controls class="rounded mx-auto d-block  d-flex justify-content-center">
+     <div class="row row-cols-1 m-auto mt-3 d-flex justify-content-center">
+      <div class="col me">
+        <video controls class="rounded mx-auto d-block">
           <source src="{{ url('video') }}/{{ $video->video}}" type="video/mp4" />
         </video>
       </div>
