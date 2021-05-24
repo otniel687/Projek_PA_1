@@ -55,6 +55,9 @@ input:focus {
     background-color: #ba000d;
 }
 
+#galery .modal-footer .btn:hover {
+    background-color: #ba000d;
+}
 footer a {
     text-decoration: none;
     color: cornflowerblue;
