@@ -54,3 +54,8 @@ input:focus {
 #pengrajin .btn:hover {
     background-color: #ba000d;
 }
+
+footer a {
+    text-decoration: none;
+    color: cornflowerblue;
+}

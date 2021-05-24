@@ -21,40 +21,44 @@
   <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
   <link rel="stylesheet" href="{{asset('css/style.css')}} ">
+  <link rel="stylesheet" href="{{asset('css/button.css')}} ">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <title>Kritik Saran</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-          <a class="navbar-brand" href="/"><img src="img/logo2.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="{{asset('../css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+        <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/">Home</a>
+              <a class="nav-link " aria-current="page" href="{{url('/')}} ">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/desa">Tentang Desa</a>
+              <a class="nav-link" href="{{url('/desa')}}">Tentang Desa</a>
             </li>
             </li>
               <li class="nav-item">
-              <a class="nav-link" href="/data_web1">Ulos</a>
+              <a class="nav-link" href="{{asset('/ulos')}}">Ulos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/katalog">Katalog</a>
+              <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/halamanpengrajin">Tentang Pengrajin</a>
+              <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
             </li>
           </ul>
         </div>
-      </div>
-  </nav>
+      </div><br>
+    </nav>
+  </header>
     
   <section id="sopi" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
@@ -76,7 +80,7 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <div class="container card" class="hero rounded-3 px-5 pb-5 pt-5">
+              <div class="container card rounded" class="hero rounded-3 px-5 pb-5 pt-5">
                   <br>
                   <form enctype="multipart/form-data" action="/kritik/simpan" method="post">
                     @csrf
@@ -112,30 +116,30 @@
             </div>
         </div>
     </div><br>
-    <center>
-      <footer  class="bg-dark text-light"><br>          
-        <div>
-          <div class="flex-c-m flex-w p-b-18">
-              <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                  <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a href="/" class="m-all-1">
-                  <img alt="Logo Desa Suhi-Suhi" width="60" src="img/logo2.png">
-              </a>
-          </div>
-          <br>
-          <font size='2'>
-          <p class="stext-107 cl6 txt-center">
-              Copyright &copy;
-              <script>
-                  document.write(new Date().getFullYear());
-              </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
-          </p>
-          </font>
-        </div>
-      </footer>
-    </center>
+   <footer  class="bg-dark text-light d-flex justify-content-center"><br>          
+       <center>
+            <div class="mt-4">
+                <div class="flex-c-m flex-w p-b-18">
+                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                    </a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="/" class="m-all-1">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                    </a>
+                </div>
+                <br>
+                <font size='2'>
+                <p class="stext-107 cl6 txt-center">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                </p>
+                </font>
+            </div>
+       </center>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

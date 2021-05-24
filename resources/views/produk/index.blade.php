@@ -53,7 +53,7 @@
     <div class="container-fluid">
       <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 d-flex justify-content-center">
       @foreach($produk as $produk)
-        <div class="col ">
+        <div class="col mb-4">
           <div class="card shadow-sm ">
             <div class="wrapper">
               <div class="gallery">

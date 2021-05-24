@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-  <footer  class="bg-dark text-light d-flex justify-content-center"><br>          
+  <footer class="bg-dark text-light d-flex justify-content-center"><br>          
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
@@ -52,7 +52,7 @@
                 </div>
                 <br>
                 <font size='2'>
-                <p class="stext-107 cl6 txt-center">
+                <p >
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());

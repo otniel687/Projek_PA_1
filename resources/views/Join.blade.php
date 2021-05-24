@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
-  <!-- Bootstrap CSS -->
+ <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <!-- Google Fonts -->
@@ -15,8 +15,9 @@
 
   <!-- Icon -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+  {{-- <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet"> --}}
   <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
+  <link rel="stylesheet" href="{{ asset('css/button.css') }}" >
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }} ">
   <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
@@ -31,7 +32,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img src="{{asset('css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+        <img src="{{asset('../css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
         <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,8 +57,7 @@
             </li>
           </ul>
         </div>
-      </div>
-      <br>
+      </div><br>
     </nav>
   </header>
   
@@ -72,9 +72,10 @@
   </section><br>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <div class="container">
   <div class="row join-us d-flex justify-content-center">
-    <div class="col-md-8">
-      <div class="container card hero rounded px-5 pb-5 pt-5">
+    <div class="col-md-9">
+      <div class="card hero rounded ">
           <form enctype="multipart/form-data" action="/join/simpan" method="post">
             @csrf
               <div class="form-group">
@@ -109,7 +110,7 @@
                       <div class="invalid-feedback">{{  $message }}</div>
                   @enderror
 
-              <div class="form-group mt-3">
+              <div class="form-group mt-2">
               <label>Kerajinan yang dapat dibuatkan</label>
               <select name="kerajinan" class="form-control @error('kerajinan') is-invalid @enderror" value="{{ old('kerajinan') }}" autocomplete="off">
                   <option value="">Pilih Keterampilan</option>
@@ -131,7 +132,7 @@
           <br>
       </div>
     </div>
-    <div class="col-md-2 d-flex justify-content-center">
+    <div class="col-md-3 d-flex justify-content-center">
       <div>
         <label><h4>Contact Us</h4></label><br>
         <div class="form-group mt-3">
@@ -152,31 +153,33 @@
         </div>
       </div>
     </div>
-  </div><br>
-  <center>
-    <footer  class="bg-dark text-light"><br>          
-      <div>
-        <div class="flex-c-m flex-w p-b-18">
-            <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                <img alt="Logo IT Del" width="50" src="http://meatnauli.site/frontend/images/icons/itdel.png">
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="/" class="m-all-1">
-                <img alt="Logo Desa Suhi-Suhi" width="60" src="img/logo2.png">
-            </a>
-        </div>
-        <br>
-        <font size='2'>
-        <p class="stext-107 cl6 txt-center">
-            Copyright &copy;
-            <script>
-                document.write(new Date().getFullYear());
-            </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
-        </p>
-        </font>
-      </div>
+  </div>
+  </div>
+  <br>
+ <footer class="bg-dark text-light d-flex justify-content-center"><br>          
+       <center>
+            <div class="mt-4">
+                <div class="flex-c-m flex-w p-b-18">
+                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                    </a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="/" class="m-all-1">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                    </a>
+                </div>
+                <br>
+                <font size='2'>
+                <p class="stext-107 cl6 txt-center">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                </p>
+                </font>
+            </div>
+       </center>
     </footer>
-  </center>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <script src="{{asset('js/bootstrap.bundle.min.js')}} "></script>
   <script src="{{asset('js/script.js')}} "></script>
@@ -185,6 +188,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
   <script>
       //message with toastr
       @if(session()-> has('success'))

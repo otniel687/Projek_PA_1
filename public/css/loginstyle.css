@@ -30,7 +30,7 @@ input:focus {
     color: rgb(221, 78, 11);
 }
 .row .rounded {
-    width: 50rem;
+    width: 40rem;
 }
 
 /*/ Responsive /*/
@@ -38,23 +38,17 @@ input:focus {
     .row .card {
         width: 31rem;
     }
-    /* .join-us .col-md-2 {
-        margin-left: 25px;
-    } */
-    .join-us .col-md-2 input {
+    .join-us .col-md-3 input {
         width: 25rem;
     }
+    .join-us .col-md-3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
-
+/* 
 @media (min-width: 1000px) {
-    .join-us .col-md-2 {
+    .join-us .col-md-3 {
         margin-left: 70px;
     }
-    /* .join-us .col-md-2 input {
-        width: 25rem;
-    } */
-    /* .row .col-md-9 {
-        width: 45rem;
-        margin-left: 70px;
-    } */
-}
+} */
