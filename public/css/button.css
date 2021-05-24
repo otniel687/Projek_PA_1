@@ -5,7 +5,12 @@ body {
     background-size: cover;
 }
 
-.produk .card,
+.produk .card {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(145, 144, 151, 0.56) 0px 22px 70px 4px;
+}
 .pengrajin .card {
     margin: 0 auto;
     padding: 20px;

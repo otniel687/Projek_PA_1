@@ -38,9 +38,9 @@
       <center>
       <div class = "row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center m-3 mb-5">
         @foreach($data as $pr)
-        <div class ="col " style="margin-bottom: 10px;">
-          <div class="card " style="width: 16rem;">
-            <img src="{{asset('foto')}}/{{ $pr->foto }}"  class="bd-placeholder-img " width="210" height="210">
+        <div class ="col d-flex justify-content-center mb-5" >
+          <div class="card align-center" >
+            <img src="{{asset('foto')}}/{{ $pr->foto }}"   >
             <div class="card-body ">
               <h5 class="card-title text-center ">{{$pr->nama}}</h5>
               <!-- Button trigger modal -->

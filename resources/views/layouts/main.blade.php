@@ -18,12 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-  <title>@yield('title')</title>
-  <style>
-    h1{
-      color:whitesmoke;
-    }
-  </style>
+    <title>@yield('title')</title>
   </head>
   <body style='background-image: url("{{asset('img/bg1.jpeg')}}");'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

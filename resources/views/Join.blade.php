@@ -72,9 +72,9 @@
   </section><br>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-  <div class="row join-us">
-    <div class="col-md-9">
-      <div class="container card" style="width: 50rem;" class="hero rounded px-5 pb-5 pt-5">
+  <div class="row join-us d-flex justify-content-center">
+    <div class="col-md-8">
+      <div class="container card hero rounded px-5 pb-5 pt-5">
           <form enctype="multipart/form-data" action="/join/simpan" method="post">
             @csrf
               <div class="form-group">
@@ -131,7 +131,7 @@
           <br>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 d-flex justify-content-center">
       <div>
         <label><h4>Contact Us</h4></label><br>
         <div class="form-group mt-3">

@@ -5,10 +5,10 @@ body {
 }
 body {
     background-size: cover;
-    top: 0;
+    /* top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%; */
     background-attachment: fixed;
 }
 h1 {
@@ -44,7 +44,7 @@ h1 {
     text-decoration: none;
 }
 .container table {
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -83,7 +83,6 @@ tr:nth-child(even) {
     }
 }
 .card {
-    margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
