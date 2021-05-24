@@ -41,17 +41,29 @@
     </div>
   </div><br><br><br>
 
-    <footer class="d-flex justify-content-center">           
-    <div>
-      <div class="mb-5">
-          <a href="https://www.del.ac.id/" target="_blank" class="">
-              <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
-          </a>
-          <a href="/" class="">
-              <img alt="Logo Desa Suhi-Suhi" width="60" src="img/{{ $logo->gambar }} ">
-          </a>
-      </div>
-    </div>
+    <footer  class="bg-dark text-light d-flex justify-content-center"><br>          
+       <center>
+            <div class="mt-4">
+                <div class="flex-c-m flex-w p-b-18">
+                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                    </a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="/" class="m-all-1">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                    </a>
+                </div>
+                <br>
+                <font size='2'>
+                <p class="stext-107 cl6 txt-center">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                </p>
+                </font>
+            </div>
+       </center>
     </footer>
 </section>
 @endsection
