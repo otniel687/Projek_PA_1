@@ -32,29 +32,3 @@ input:focus {
 .row .rounded {
     width: 50rem;
 }
-
-/*/ Responsive /*/
-@media (max-width: 768px) {
-    .row .card {
-        width: 31rem;
-    }
-    /* .join-us .col-md-2 {
-        margin-left: 25px;
-    } */
-    .join-us .col-md-2 input {
-        width: 25rem;
-    }
-}
-
-@media (min-width: 1000px) {
-    .join-us .col-md-2 {
-        margin-left: 70px;
-    }
-    /* .join-us .col-md-2 input {
-        width: 25rem;
-    } */
-    /* .row .col-md-9 {
-        width: 45rem;
-        margin-left: 70px;
-    } */
-}
