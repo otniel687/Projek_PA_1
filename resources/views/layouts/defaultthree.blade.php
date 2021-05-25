@@ -31,23 +31,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="{{url('/')}} ">Home</a>
+              <a class="nav-link " aria-current="page" href="{{asset('/')}} ">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url('/desa')}}">Tentang Desa</a>
+              <a class="nav-link" href="{{asset('/desa')}}">Tentang Desa</a>
             </li>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="{{asset('/ulos')}}">Ulos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
+              <a class="nav-link" href="{{asset('/katalog')}} ">Katalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
+              <a class="nav-link" href="{{asset('/halamanpengrajin')}} ">Tentang Pengrajin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item btn btn-info tombol" href="{{url('/login')}}">Login Admin</a>
+              <a class="nav-item btn btn-info tombol" href="{{asset('/login')}}">Login Admin</a>
             </li>
           </ul>
         </div>
