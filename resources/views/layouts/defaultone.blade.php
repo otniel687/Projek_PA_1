@@ -43,11 +43,11 @@
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
                     <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
                     </a>
                     &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
                     </a>
                 </div>
                 <br>

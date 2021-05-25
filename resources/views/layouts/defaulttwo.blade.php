@@ -7,10 +7,10 @@
   <link rel="Icon" class="rounded-circle" href="{{asset('../css/Image/logo.png')}} ">
   <title> @yield('title') | Desa Suhisuhi</title>
   <!-- Bootstrap core CSS -->
-  <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet" />
+  <link href="{{asset('css')}}/bootstrap.min.css " rel="stylesheet" />
   <!--style CSS-->
-  <link rel="stylesheet" href="{{asset('css/style.css')}}" />
-      <link rel="stylesheet" href="{{ asset('css/button.css') }}" >
+  <link rel="stylesheet" href="{{asset('css')}}/style.css" />
+      <link rel="stylesheet" href="{{ asset('css')}}/button.css" >
   <!--Style Icon-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
     <!--Fancy Box-->
@@ -23,7 +23,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img src="{{asset('../css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+        <img src="{{asset('../css/image')}}/logo.png " class="rounded-circle" style="width: 100px;" alt="">
         <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -103,11 +103,11 @@
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
                     <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
                     </a>
                     &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
                     </a>
                 </div>
                 <br>

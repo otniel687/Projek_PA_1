@@ -16,12 +16,12 @@
   <!-- Icon -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   {{-- <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet"> --}}
-  <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
-  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }} ">
-  <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+  <link rel="stylesheet" href="{{ asset('css')}}/loginstyle.css" >
+  <link rel="stylesheet" href="{{ asset('css')}}/bootstrap.min.css ">
+  <link rel="stylesheet" href="{{asset('css')}}/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-  <link rel="stylesheet" href="{{asset('css/style.css')}} ">
-  <link rel="stylesheet" href="{{asset('css/button.css')}} ">
+  <link rel="stylesheet" href="{{asset('css')}}/style.css ">
+  <link rel="stylesheet" href="{{asset('css')}}/button.css ">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -31,7 +31,7 @@
    <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img src="{{asset('../css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+        <img src="{{asset('../css/image')}}/logo.png " class="rounded-circle" style="width: 100px;" alt="">
         <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -121,11 +121,11 @@
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
                     <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img/1621235737.png')}}">
+                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
                     </a>
                     &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img/logo2.png')}} ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
                     </a>
                 </div>
                 <br>

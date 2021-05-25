@@ -4,7 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
+  <link rel="Icon" class="rounded-circle" href="{{asset('../css/Image/logo.png')}} ">
  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -16,12 +16,12 @@
   <!-- Icon -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   {{-- <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet"> --}}
-  <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
-  <link rel="stylesheet" href="{{ asset('css/button.css') }}" >
-  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }} ">
-  <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+  <link rel="stylesheet" href="{{ asset('css')}}/loginstyle.css" >
+  <link rel="stylesheet" href="{{ asset('css')}}/button.css" >
+  <link rel="stylesheet" href="{{ asset('css')}}/bootstrap.min.css ">
+  <link rel="stylesheet" href="{{asset('css')}}/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-  <link rel="stylesheet" href="{{asset('css/style.css')}} ">
+  <link rel="stylesheet" href="{{asset('css')}}/style.css ">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -32,7 +32,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img src="{{asset('../css/image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
+        <img src="{{asset('../css/Image/logo.png')}} " class="rounded-circle" style="width: 100px;" alt="">
         <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

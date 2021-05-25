@@ -5,20 +5,20 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="Icon" class="rounded-circle" href="{{asset('css/Image/logo.png')}} ">
-  <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
+  <link rel="stylesheet" href="{{ asset('css')}}/loginstyle.css" >
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Home | Desa Suhisuhi</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css')}}/bootstrap.min.css">
 
   <!--style CSS-->
-  <link  type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}" />
-  <link  type="text/css" rel="stylesheet" href="{{ asset('css/button.css') }}" />
+  <link  type="text/css" rel="stylesheet" href="{{ asset('css')}}/style.css" />
+  <link  type="text/css" rel="stylesheet" href="{{ asset('css')}}/button.css" />
 
   <!--Style Icon-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="{{ asset('css/loginstyle.css') }}" >
+  <link rel="stylesheet" href="{{ asset('css')}}/loginstyle.css" >
 </head>
 <body>
   <!--Navbar-->

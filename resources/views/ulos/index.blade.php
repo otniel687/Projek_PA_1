@@ -29,21 +29,21 @@
           <div class="card mb-4 shadow-sm">
             
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $ragi_hidup->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $ragi_hidup->gambar }}" alt="" />
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card mb-4 shadow-sm">
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $mangiring->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $mangiring->gambar }}" alt="" />
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card mb-4 shadow-sm">
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $ragi_hotang->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $ragi_hotang->gambar }}" alt="" />
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
           <div class="card mb-4 shadow-sm">
             
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $ariteneng->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $ariteneng->gambar }}" alt="" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
           <div class="card mb-4 shadow-sm">
             
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $gatip->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $gatip->gambar }}" alt="" />
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
           <div class="card mb-4 shadow-sm">
             
             <div class="card figure">
-              <img class="img-fluib" src="gambar/{{ $beka_buluh->gambar }}" alt="" />
+              <img class="img-fluib" src="{{asset('gambar')}}/{{ $beka_buluh->gambar }}" alt="" />
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@
     <div class="row row-cols-1 m-auto mt-3 d-flex justify-content-center">
       <div class="col me">
         <video controls class="rounded mx-auto d-block">
-          <source src="{{ url('video') }}/{{ $video->video}}" type="video/mp4" />
+          <source src="{{ url('video')}}/{{ $video->video}}" type="video/mp4" />
         </video>
       </div>
     </div>
