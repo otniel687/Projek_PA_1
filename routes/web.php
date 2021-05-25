@@ -24,10 +24,6 @@ Route::get('/kritik', 'App\Http\Controllers\KritikController@tampil');
 Route::post('/kritik/simpan', 'App\Http\Controllers\KritikController@store');
 Route::get('/join', 'App\Http\Controllers\PengrajinController@join');
 Route::post('/join/simpan', 'App\Http\Controllers\PengrajinController@store');
-Route::get('/data_web1', 'App\Http\Controllers\Web1Controller@index');
-Route::get('/data_web2', 'App\Http\Controllers\Web2Controller@batak');
-Route::get('/data_web3', 'App\Http\Controllers\Web3Controller@batak');
-
 
 //login
 Route::post('/login','App\Http\Controllers\login\LoginController@login')->name('login');

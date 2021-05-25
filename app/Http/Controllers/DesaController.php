@@ -33,7 +33,7 @@ class DesaController extends Controller
         ->join('picture', 'galery.id_gambar', '=', 'picture.id')
         ->select('galery.*','picture.gambar')
         ->paginate();
-        return view('About.desa',[
+        return view('about.desa',[
             'desa'=>$desa,
             'galery'=>$galery,
             'video'=>$video
