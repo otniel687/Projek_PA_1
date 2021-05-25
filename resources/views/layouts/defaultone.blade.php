@@ -21,7 +21,7 @@
 @section('footer')
 <section id="footer" class="bg-dark text-light">
     <div class="container">
-      <div class="row footer-home ">
+      <div class="row footer-home mt-5">
         <div class="col-md-4" style=" color: cornflowerblue">
           <font size='6'><p>{!! $web->informasi !!} </p></font>
         </div>
