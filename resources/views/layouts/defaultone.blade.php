@@ -21,46 +21,47 @@
 @section('footer')
 <section id="footer" class="bg-dark text-light">
     <div class="container">
-      <div class="row footer-home mt-5">
-        <div class="col-md-4" style=" color: cornflowerblue">
-          <font size='6'><p>{!! $web->informasi !!} </p></font>
-        </div>
-        <div class="col-md-5" >
-          {!! $footer->informasi !!}
-        </div>
-        <div class="col-md-3">
-          <a href="{{asset('/kritik')}} " class="btn btn-warning" style="width: 190px;">Kritik Dan Saran</a><br>
-          <br>
-          <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
-          <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
-          <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
-          <a class="social mt-5" href="https://www.youtube.com/watch?v=VLNjo2LQ2XY" target="_blank"><i class="bi bi-youtube"></i></a>
-        </div>
+    <div class="row footer-jarak" >
+      <div class="col-md-5 " style="color: cornflowerblue; size:'7';">
+        <font size='7'><p>Website UMKM Ulos Desa Lumban Suhi Suhi Toruan</p></font>
+      </div>
+      <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
+      <div class="col-md-4 " style="">
+        <div class="referens">
+        <h2 style="color:darkcyan">Link Terkait</h2><br>
+          <h5><a href="https://samosirkab.go.id/">Pemkab Samosir</a></h5><br>
+          <h5><a href="https://www.indonesia.travel/id/id/home">Wonderful Indonesia</a></h5><br>
+          <h5><a href="https://www.kemenparekraf.go.id/">kemenparekraf RI</a></h5><br>
+          <h5><a href="https://www.del.ac.id/">IT Del</a></h5>
+            </div>
+      </div>
+      <div class="col-md-3">
+        <a href="{{asset('/kritik')}} " class="btn btn-warning" style="width: 190px">Kritik Dan Saran</a><br>
+        
+        <br>
+        <a class="social mt-5" href="https://web.facebook.com/search/top?q=desa%20lumban%20suhi-suhi" target="_blank"><i class="bi bi-facebook m-3"></i></a>
+        <a class="social mt-5" href="https://www.instagram.com/explore/locations/279052206/lumban-suhi-suhi-kabsamosir/?hl=id" target="_blank"><i class="bi bi-instagram"></i></i></a>
+        <a class="social mt-5" href="https://api.whatsapp.com/send?phone=6282273896001" target="_blank"><i class="bi bi-whatsapp m-3"></i></a>
+        <a class="social mt-5" href="https://www.youtube.com/watch?v=VLNjo2LQ2XY" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
       </div>
     </div>
-  <footer class="bg-dark text-light d-flex justify-content-center"><br>          
+     <footer class="bg-dark text-light d-flex justify-content-center"><br>          
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
-                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('image')}}/logo.png ">
                     </a>
                 </div>
                 <br>
                 <font size='2'>
-                <p >
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                <p class="stext-107 cl6 txt-center">
+                    Copyright &copy; 2021| Website UMKM Desa Suhi Suhi 
                 </p>
                 </font>
             </div>
        </center>
     </footer>
-</section>
+  </section>
 @endsection

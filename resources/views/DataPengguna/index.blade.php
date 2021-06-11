@@ -34,5 +34,8 @@
             </table>
         </div>
     </div>
+    <div class="d-flex justify-content-end">
+        {{ $data->links()}}
+    </div>
 </div>
 @endsection

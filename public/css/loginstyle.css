@@ -31,18 +31,10 @@ input:focus {
 .row .rounded {
     width: 40rem;
 }
-
 /*/ Responsive /*/
 @media (max-width: 768px) {
-    .row .card {
-        width: 31rem;
-    }
-    .join-us .col-md-3 input {
-        width: 25rem;
-    }
-    .join-us .col-md-3 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .row .rounded {
+        width: auto;
     }
 }
 /* 

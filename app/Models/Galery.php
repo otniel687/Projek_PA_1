@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Desa extends Model
+class Galery extends Model
 {
     use HasFactory;
-    protected $table = 'data_web';
-    protected $fillable = ['id', 'nama', 'informasi', 'gambar'];
+    protected $table = 'picture';
+    protected $fillable = ['id', 'gambar'];
     protected $primaryKey = 'id';
 }

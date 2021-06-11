@@ -1,8 +1,14 @@
-@extends('layouts.defaultthree')
+@extends('layouts.defaulttwo')
 @section('title','Ulos')
   <!--Header-->
 @section('header')
-<section id="header-ulos" class=" d-flex align-items-center">
+<section id="header-ulos" class=" d-flex align-items-center" style="height: 100vh;
+    width: 100%;
+    background: url(../css/Image/{{ $header->gambar}});
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    filter: brightness(65%);">
   <div class="container p-4 p-md-5 mb-4 text-white rounded" style="color: #fff;  background-size: cover;">
     <div class="col-md-6 px-0">
       <h1 class="display-4 fst-italic">{{ $header->nama }}</h1>
@@ -109,27 +115,12 @@
           <img src="image/{{ $ulos->gambar }}" alt="" class="mb-4">
         @endforeach
     </div>
+    <div class="row">
+      <div class="col">
+        <p>Sumber : https://budaya-indonesia.org/Proses-Pembuatan-Ulos</p>
+      </div>
+    </div>
   </div>
 </section>
 @endsection
 
-<!--Video -->
-@section('video')
-<section id="video">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center">Video</h3>
-      </div>
-    </div>
-    <div class="row row-cols-1 m-auto mt-3 d-flex justify-content-center">
-      <div class="col me">
-        <video controls class="rounded mx-auto d-block">
-          <source src="{{ url('video')}}/{{ $video->video}}" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-  </div>
-</section>
-@endsection
-   

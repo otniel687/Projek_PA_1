@@ -15,6 +15,7 @@ class DesaController extends Controller
         $footer = Desa::find(13);
         $web = Desa::find(14);
         $logo = Desa::find(15);
+        
         return view('layouts.defaultone',[
             'dashboard'=>$dashboard,
             'footer'=>$footer,
@@ -26,17 +27,15 @@ class DesaController extends Controller
     public function index()
     {
         $desa = Desa::orderBy('id', 'asc')->limit(4)->get();
-        $video = DB::table('video')
-        ->select('video.*', 'video.video')
-        ->find(1);
         $galery = DB::table('galery')
         ->join('picture', 'galery.id_gambar', '=', 'picture.id')
         ->select('galery.*','picture.gambar')
         ->paginate();
+        $header = Desa::find(20);
         return view('about.desa',[
             'desa'=>$desa,
             'galery'=>$galery,
-            'video'=>$video
+            'header'=>$header,
         ], compact('desa'));
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pengrajin;
+use App\Models\Desa;
 use Illuminate\Http\Request;
 
 class PengrajinController extends Controller
@@ -29,8 +30,10 @@ class PengrajinController extends Controller
 
     public function join()
     {
-        //
-        return view('Join');
+         $header = Desa::find(19);
+        return view('Join',[
+            'header'=>$header
+        ]);
     }
 
     /**
@@ -122,8 +125,6 @@ class PengrajinController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-
         if ($request->file('foto')==NULL) {
             $pengrajin = Pengrajin::find($id);
             $pengrajin->nama = $request->nama;

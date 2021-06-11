@@ -21,13 +21,9 @@ class UlosController extends Controller
         $gatip = Jenis::find(13);
         $beka_buluh = Jenis::find(9);
         $data = Ulos::all();
-        $video = DB::table('video')
-        ->select('video.*', 'video.video')
-        ->find(2);
         return view('ulos.index', [
             'data' => $data,
             'header' => $header,
-            'video' => $video,
             'penjelasan' => $penjelasan, 
             'ragi_hidup' => $ragi_hidup, 
             'mangiring' => $mangiring, 
@@ -44,13 +40,9 @@ class UlosController extends Controller
         ->limit(8)
         ->orderBy('created_at','asc')
         ->paginate(8);
-        $video = DB::table('video')
-        ->select('video.*', 'video.video')
-        ->find(3);
         $header = Desa::find(7);
         $about = Desa::find(8);
         return view('ulos.batak', [
-            'video' => $video,
             'ulos' => $ulos,
             'header' => $header,
             'about' => $about,
@@ -61,14 +53,10 @@ class UlosController extends Controller
         $ulos = DB::table('jenis_ulos')
         ->select('jenis_ulos.*')
         ->offset(8)->limit(6)->get();
-        $video = DB::table('video')
-        ->select('video.*', 'video.video')
-        ->find(4);
         $header = Desa::find(9);
         $about = Desa::find(10);
         $about2 = Desa::find(11);
         return view('ulos.karo', [
-            'video' => $video,
             'ulos' => $ulos,
             'header' => $header,
             'about' => $about,

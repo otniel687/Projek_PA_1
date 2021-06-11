@@ -42,7 +42,7 @@
               <a class="nav-link " aria-current="page" href="{{url('/')}} ">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url('/desa')}}">Tentang Desa</a>
+              <a class="nav-link" href="{{url('/desa')}}">Desa</a>
             </li>
             </li>
               <li class="nav-item">
@@ -52,7 +52,7 @@
               <a class="nav-link" href="{{url('/katalog')}} ">Katalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Tentang Pengrajin</a>
+              <a class="nav-link" href="{{url('/halamanpengrajin')}} ">Pengrajin</a>
             </li>
           </ul>
         </div>
@@ -60,7 +60,12 @@
     </nav>
   </header>
     
-  <section id="sopi" class="d-flex align-items-center">
+  <section id="sopi" class="d-flex align-items-center" style="width: 100%;
+    height: 30vh;
+    background: url('../Image/{{ $header->gambar}} ') top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8" style="font-family: 'Dancing Script', cursive;">
@@ -116,25 +121,18 @@
             </div>
         </div>
     </div><br>
-   <footer  class="bg-dark text-light d-flex justify-content-center"><br>          
+   <footer class="bg-dark text-light d-flex justify-content-center"><br>          
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
-                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('../image/logo.png')}} ">
                     </a>
                 </div>
                 <br>
                 <font size='2'>
                 <p class="stext-107 cl6 txt-center">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                    Copyright &copy; 2021 | Website UMKM Desa Suhi-Suhi
                 </p>
                 </font>
             </div>

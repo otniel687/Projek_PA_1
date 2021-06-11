@@ -2,7 +2,13 @@
 @section('title', 'Pengrajin')
 <!--Header-->
 @section('header')
-<section id="pengrajin" class="d-flex align-items-center">
+<section id="pengrajin" class="d-flex align-items-center" style="height: 100vh;
+    width: 100%;
+    background: url(../css/Image/{{$header->gambar}});
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    filter: brightness(60%);">
   <div class="container p-4 p-md-5 mb-4 mt-5 text-white rounded" style="color: #fff;  background-size: cover;">
     <div class="col-md-8 px-0">
       <h1 class="display-4 fst-italic">{{ $header->nama}} </h1>

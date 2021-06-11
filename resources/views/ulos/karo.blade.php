@@ -1,12 +1,18 @@
-@extends('layouts.defaultthree')
+@extends('layouts.defaulttwo')
 @section('title', 'Ulos Batak Karo')
 <!--Header-->
 @section('header')
-    <section id="bg-karo" class="d-flex align-items-center">
+    <section id="bg-karo" class="d-flex align-items-center" style="height: 300px;
+    width: 100%;
+    background: url(../Image/{{$header->gambar}});
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    filter: brightness(70%);">
   <div class="container position-relative text-center text-lg-start " data-aos="zoom-in" data-aos-delay="100">
     <div class="row">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">{{$header->nama}} </h1> 
+      <h1 class="display-4 fst-italic">{!! $header->informasi !!} </h1> 
     </div>
     </div>
   </div>
@@ -72,26 +78,6 @@
 
     </div>
     </div>    
-  </div>
-</section>
-@endsection
-
-<!--Video -->
-@section('video')
-<section id="video">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center">Video</h3>
-      </div>
-    </div>
-    <div class="row row-cols-1 m-auto mt-3 d-flex justify-content-center">
-      <div class="col me">
-        <video controls class="rounded mx-auto d-block  d-flex justify-content-center">
-          <source src="{{ url('video')}}/{{ $video->video}}" type="video/mp4" />
-        </video>
-      </div>
-      </div>
   </div>
 </section>
 @endsection

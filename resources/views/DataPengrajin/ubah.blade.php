@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8"><br>
+        <div class="col-md-8 mb-5"><br>
             <h1 class="text-center">UBAH DATA</h1>
             <div class="hero rounded-3 px-5 pb-5 pt-3">
                 <h4><a href="/pengrajin" class="badge bg-secondary">Kembali</a></h4>

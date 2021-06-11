@@ -4,6 +4,7 @@ namespace App\Http\Controllers\login;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Desa;
 use App\Models\User;
 use illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +12,12 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function index(){
-        return view('login');
+        $web = Desa::find(18);
+        $logo = Desa::find(14);
+        return view('login',[
+            'web'=>$web,
+            'logo'=>$logo,
+        ]);
     }
 
     public function login(Request $request){

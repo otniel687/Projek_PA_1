@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\DesaController@home');
+Route::get('/defaulttwo', 'App\Http\Controllers\DesaController@footer');
 Route::resource('/desa', 'App\Http\Controllers\DesaController');
 Route::get('/ulos', 'App\Http\Controllers\UlosController@index');
 Route::get('/ulos/batak', 'App\Http\Controllers\UlosController@batak');
@@ -48,4 +49,21 @@ Route::get('/kritiksaran', 'App\Http\Controllers\KritikController@index');
 Route::get('/kritiksaran/hapus/{id}', 'App\Http\Controllers\KritikController@destroy');
 Route::post('/kritiksaran/simpan', 'App\Http\Controllers\KritikController@store');
 
+//Data Web
+Route::get('/dataweb', 'App\Http\Controllers\DataWebController@index');
+Route::get('/dataweb/ubah/{id}', 'App\Http\Controllers\DataWebController@edit');
+Route::post('/dataweb/update/{id}', 'App\Http\Controllers\DataWebController@update');
+Route::get('/dataweb/hapus/{id}', 'App\Http\Controllers\DataWebController@destroy');
+
+//Gallery Desa 
+Route::get('/galery', 'App\Http\Controllers\GaleryController@index');
+Route::get('/galery/ubah/{id}', 'App\Http\Controllers\GaleryController@edit');
+Route::post('/galery/update/{id}', 'App\Http\Controllers\GaleryController@update');
+Route::get('/galery/hapus/{id}', 'App\Http\Controllers\GaleryController@destroy');
+
+//Video Web 
+Route::get('/video', 'App\Http\Controllers\VideoController@index');
+Route::get('/video/ubah/{id}', 'App\Http\Controllers\VideoController@edit');
+Route::post('/video/update/{id}', 'App\Http\Controllers\VideoController@update');
+Route::get('/video/hapus/{id}', 'App\Http\Controllers\VideoController@destroy');
 });

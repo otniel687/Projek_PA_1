@@ -5,29 +5,29 @@
         <div class="col-md-8 mb-5"><br>
             <h1 class="text-center">UBAH DATA</h1><br> 
             <div class="hero rounded-3 px-5 pb-5 pt-3">
-            <h4><a href="/jenis" class="badge bg-secondary">Kembali</a></h4>
-                <form  enctype="multipart/form-data" action="/jenis/update/{{ $ulos->id }}" method="post">
+            <h4><a href="/dataweb" class="badge bg-secondary">Kembali</a></h4>
+                <form  enctype="multipart/form-data" action="/dataweb/update/{{ $web->id }}" method="post">
                     {{ csrf_field() }}
                     <div class="form-group">
                         <label>ID</label>
-                        <input type="text" name="id_jenis" class="form-control" value="{{ $ulos->id_jenis }}">
+                        <input type="text" name="id" class="form-control" value="{{ $web->id }}">
                     </div>
                     <div class="form-group  mt-3">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control" value="{{ $ulos->nama }}">
+                        <input type="text" name="nama" class="form-control" value="{{ $web->nama }}">
                     </div>
                     <div class="form-group  mt-3">
-                        <label>Deskripsi</label>
-                        <input type="text" name="deskripsi" class="form-control" value="{{ $ulos->deskripsi }}">
-                    </div>
-                    <div class="form-group  mt-3">
-                        <label>Harga</label>
-                        <input type="text" name="harga" class="form-control" value="{{ $ulos->harga }}">
+                        <label>Informasi</label>
+                        <textarea class="form-control @error('keluhan') is-invalid @enderror" name="informasi" rows="5" >{{ old('keluhan', $web->informasi) }}</textarea>
                     </div>
                     <div class="form-group  mt-3">
                         <label>Gambar</label>
-                        <input type="file" name="gambar" class="form-control" value=" $ulos->gambar">
-                        <img src="{{asset('gambar')}}/{{ $ulos->gambar }}" alt="Gambar Jenis Ulos" style="max-width:100px; margin-top:20px;">
+                        <input type="file" name="gambar" class="form-control" value=" $web->gambar">
+                        <img src="{{asset('image')}}/{{ $web->gambar }}" alt="Gambar Jenis web" style="max-width:100px; margin-top:20px;">
+                    </div>
+                    <div class="form-group  mt-3">
+                        <label>Sumber</label>
+                        <input type="text" name="sumber" class="form-control" value="{{ $web->sumber }}">
                     </div>
                     <div class="form-group">
                     <br><br>

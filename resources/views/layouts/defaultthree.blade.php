@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Icon" class="rounded-circle" href="{{asset('../css/Image')}}/logo.png ">
-  <title> @yield('title') | Desa Suhisuhi</title>
+  <title> @yield('title') | Desa Suhi Suhi</title>
   <!-- Bootstrap core CSS -->
   <link href="{{asset('css')}}/bootstrap.min.css " rel="stylesheet" />
   <!--style CSS-->
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <img src="{{asset('../css/Image')}}/logo.png " class="rounded-circle" style="width: 100px;" alt="">
-        <h3 class="navbar-brand" href="#"><strong> DESA SUHISUHI</strong></h3>
+        <h3 class="navbar-brand" href="#"><strong> DESA SUHI SUHI</strong></h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +34,7 @@
               <a class="nav-link " aria-current="page" href="{{asset('/')}} ">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{asset('/desa')}}">Tentang Desa</a>
+              <a class="nav-link" href="{{asset('/desa')}}">Desa</a>
             </li>
             </li>
               <li class="nav-item">
@@ -44,7 +44,7 @@
               <a class="nav-link" href="{{asset('/katalog')}} ">Katalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{asset('/halamanpengrajin')}} ">Tentang Pengrajin</a>
+              <a class="nav-link" href="{{asset('/halamanpengrajin')}} ">Pengrajin</a>
             </li>
             <li class="nav-item">
               <a class="nav-item btn btn-info tombol" href="{{asset('/login')}}">Login Admin</a>
@@ -75,7 +75,7 @@
     <div class="container">
     <div class="row footer-jarak" >
       <div class="col-md-5 " style="color: cornflowerblue; size:'7';">
-        <font size='7'><p>UMKM website of Lumban Suhi-Suhi Village </p></font>
+        <font size='7'><p>UMKM website of Lumban Suhi Suhi Village </p></font>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
       <div class="col-md-4" style="">
@@ -101,21 +101,14 @@
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
-                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('image')}}/logo.png ">
                     </a>
                 </div>
                 <br>
                 <font size='2'>
                 <p class="stext-107 cl6 txt-center">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                    Copyright &copy; 2021 | Website UMKM Desa Suhi Suhi 
                 </p>
                 </font>
             </div>

@@ -45,16 +45,6 @@ textarea {
     color: #119cf6;
 }
 
-#header-ulos {
-    height: 90vh;
-    width: 100%;
-    background: url("../css/Image/ulos_batak.jpg");
-    background-size: cover;
-    position: relative;
-    padding: 0;
-    filter: brightness(70%);
-}
-
 .garis-bawah-putih {
     border: 4px solid rgb(255, 255, 255);
     width: 150px;
@@ -85,44 +75,15 @@ textarea {
     font-family: "Poppins", sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 6);
 }
-#pengrajin {
-    height: 100vh;
-    width: 100%;
-    background: url("../css/Image/pengrajin.jpeg");
-    background-size: cover;
-    position: relative;
-    padding: 0;
-    filter: brightness(60%);
-}
 
 #pengrajin .container {
     padding-top: 510px;
-}
-
-#bg-batak {
-    height: 300px;
-    width: 100%;
-    background: url("../css/Image/ragi_idup.jpeg");
-    background-size: cover;
-    position: relative;
-    padding: 0;
-    filter: brightness(70%);
 }
 
 #bg-batak h1,
 #bg-karo h1 {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 6);
-}
-
-#bg-karo {
-    height: 300px;
-    width: 100%;
-    background: url("../css/Image/gatip.jpeg");
-    background-size: cover;
-    position: relative;
-    padding: 0;
-    filter: brightness(70%);
 }
 
 #hero h2 {
@@ -436,23 +397,23 @@ a i {
     height: 210px;
 }
 
-#hero {
+/* #hero {
     width: 100%;
     height: 100vh;
     background: url("../css/Image/header.jpg") top center;
     background-size: cover;
     position: relative;
     padding: 0;
-}
+} */
 
-#sopi {
+/* #sopi {
     width: 100%;
     height: 30vh;
     background: url("../css/Image/ss.jpg") top center;
     background-size: cover;
     position: relative;
     padding: 0;
-}
+} */
 
 #hero:before {
     content: "";
@@ -594,20 +555,6 @@ a i {
     #footer .col-md-3 {
         margin-left: 5px;
         margin-top: 30px;
-    }
-
-    .footer-jarak {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .footer-home {
-        margin-left: 10px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
-    .footer-jarak {
-        margin-left: 50px;
-        margin-right: 50px;
     }
     .join-us .col-md-2 {
         margin-top: 50px;

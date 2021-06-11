@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="Icon" class="rounded-circle" href="{{asset('img')}}/logo2.png ">
+    <link rel="Icon" class="rounded-circle" href="{{asset('../image')}}/logo.png ">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <title>@yield('title')</title>
   </head>
-  <body style='background-image: url("{{asset('img')}}/bg1.jpeg");'>
+  <body style='background-image: url("{{asset('image')}}/bg_admin.jpeg");'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="{{asset('img/logo2.png')}} " width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
+            <a class="navbar-brand" href="/"><img src="{{asset('../image')}}/logo.png" width="80px" alt="Logo">&nbsp;&nbsp;<b>Desa SuhiSuhi</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,6 +33,8 @@
                 <a class="nav-link active" aria-current="page" href="/pengrajin">Pengrajin</a>
                 <a class="nav-link active" aria-current="page" href="/jenis">Jenis_Ulos</a>
                 <a class="nav-link active" aria-current="page" href="/kritiksaran">Kritik dan Saran</a>
+                <a class="nav-link active" aria-current="page" href="/dataweb">Data Web</a>
+                <a class="nav-link active" aria-current="page" href="/galery">Galery Desa</a>
             </div>
             </div>
             <div class="navbar2">
@@ -60,21 +62,14 @@
        <center>
             <div class="mt-4">
                 <div class="flex-c-m flex-w p-b-18">
-                    <a href="https://www.del.ac.id/" target="_blank" class="m-all-1">
-                        <img alt="Logo IT Del" width="60" src="{{asset('img')}}/1621235737.png">
-                    </a>
-                    &nbsp;&nbsp;&nbsp;
                     <a href="/" class="m-all-1">
-                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('img')}}/logo2.png ">
+                        <img alt="Logo Desa Suhi-Suhi" width="60" src="{{asset('image')}}/logo.png ">
                     </a>
                 </div>
                 <br>
                 <font size='2'>
                 <p class="stext-107 cl6 txt-center">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>| Website UMKM Desa Suhi-Suhi Oleh <a href="https://www.del.ac.id/" target="_blank">Kelompok 01 PA 1 - IT Del</a>
+                    Copyright &copy; 2021| Website UMKM Desa Suhi Suhi 
                 </p>
                 </font>
             </div>
@@ -94,9 +89,7 @@
         @elseif(session()-> has('error'))
 
             toastr.error('{{ session('error') }}', 'GAGAL!'); 
-            
         @endif
     </script>
-  
   </body>
 </html>

@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pengguna;
+use App\Models\Desa;
 use Illuminate\Http\Request;
 
 class KritikController extends Controller
 {
     public function tampil()
     {
-        return view('KritikSaran');
+        $header = Desa::find(19);
+        return view('KritikSaran',[
+            'header'=>$header
+        ]);
     }
 
     /**
@@ -19,8 +23,11 @@ class KritikController extends Controller
      */
     public function index()
     {
-        $data = Pengguna::all();
-        return view('DataPengguna.index', ['data'=>$data]);
+        $data = Pengguna::simplePaginate(5);
+        
+        return view('DataPengguna.index', [
+            'data'=>$data,
+            ])->with('i',(request()->input('page',1) - 1) * 10);
     }
 
     /**

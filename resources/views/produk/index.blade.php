@@ -46,9 +46,11 @@
 <!--Katalog-->
 @section('content')
 <section class="produk">
-<div >
-  {!! $header->informasi !!}
-
+  <div class="row text-center m-5">
+    <div class="col">
+      {!! $header->informasi !!}
+    </div>
+  </div>
   <div class="album py-5 bg-light">
     <div class="container-fluid">
       <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 d-flex justify-content-center">
@@ -58,7 +60,7 @@
             <div class="wrapper">
               <div class="gallery">
                 <div class="image">
-                    <span><img src="{{ url('image') }}/{{ $produk->gambar }}"class="bd-placeholder-img img-produk"  ></span>
+                    <span><img src="{{ url('image') }}/{{ $produk->gambar }}" class="bd-placeholder-img img-produk"  ></span>
                   <li class="text-center mt-2">{{ $produk->nama }}</li>
                 </div>
               </div>
@@ -66,7 +68,7 @@
             <div class="card-body d-flex justify-content-center">                  
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group "> 
-                  <button type="button" class="btnMore "  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">More</button>                      <!-- Modal -->
+                  <button type="button" class="btnMore "  data-bs-toggle="modal" data-bs-target="#produk0{{ $produk->id }}">Beli</button>                      <!-- Modal -->
                   <div class="modal fade" id="produk0{{ $produk->id }}" tabindex="-1" aria-labelledby="produk0Label" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -110,17 +112,17 @@
       </div>
       <div class="preview-box">
         <div class="details">
+          @foreach ($ulos as $ulos)
           <span class="title">
-            Image
+            
             <p class="current-img"></p>
-            of
             <p class="total-img"></p>
+            
           </span>
+          @endforeach
           <span class="icon fas fa-times"></span>
         </div>
         <div class="image-box">
-          <div class="slide prev"><i class="fas fa-angle-left"></i></div>
-          <div class="slide next"><i class="fas fa-angle-right"></i></div>
           <img src="" alt="" />
         </div>
       </div>

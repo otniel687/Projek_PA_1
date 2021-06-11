@@ -13,9 +13,11 @@ class ProdukController extends Controller
     {
         $header = Desa::find(16);
         $produk = DB::table('produk')->get();
+        $ulos = DB::table('produk')->get();
         return view('produk.index', [
             'produk' => $produk,
             'header' => $header,
+            'ulos' => $ulos,
             ]);
     }
     public function home()
