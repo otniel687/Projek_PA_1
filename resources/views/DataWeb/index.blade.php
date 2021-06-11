@@ -39,7 +39,9 @@
             </table>
         </div>
     </div>
-    
+    <div class="d-flex justify-content-end">
+        {{ $data->links()}}
+    </div>
     <div class="row card bg-light m-5">
             <h2>NB:</h2><br>
             <p>
