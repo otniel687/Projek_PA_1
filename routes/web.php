@@ -61,9 +61,11 @@ Route::get('/galery/ubah/{id}', 'App\Http\Controllers\GaleryController@edit');
 Route::post('/galery/update/{id}', 'App\Http\Controllers\GaleryController@update');
 Route::get('/galery/hapus/{id}', 'App\Http\Controllers\GaleryController@destroy');
 
-//Video Web 
-Route::get('/video', 'App\Http\Controllers\VideoController@index');
-Route::get('/video/ubah/{id}', 'App\Http\Controllers\VideoController@edit');
-Route::post('/video/update/{id}', 'App\Http\Controllers\VideoController@update');
-Route::get('/video/hapus/{id}', 'App\Http\Controllers\VideoController@destroy');
+//Produk 
+Route::get('/produk', 'App\Http\Controllers\DataProdukController@index');
+Route::get('/produk/create', 'App\Http\Controllers\DataProdukController@create');
+Route::post('/produk/store', 'App\Http\Controllers\DataProdukController@store');
+Route::get('/produk/ubah/{id}', 'App\Http\Controllers\DataProdukController@edit');
+Route::post('/produk/update/{id}', 'App\Http\Controllers\DataProdukController@update');
+Route::get('/produk/hapus/{id}', 'App\Http\Controllers\DataProdukController@destroy');
 });

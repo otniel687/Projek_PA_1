@@ -35,6 +35,7 @@
                 <a class="nav-link active" aria-current="page" href="/kritiksaran">Kritik dan Saran</a>
                 <a class="nav-link active" aria-current="page" href="/dataweb">Data Web</a>
                 <a class="nav-link active" aria-current="page" href="/galery">Galery Desa</a>
+                <a class="nav-link active" aria-current="page" href="/produk">Produk Web</a>
             </div>
             </div>
             <div class="navbar2">

@@ -546,19 +546,6 @@ a i {
     .pengrajin .card img {
         height: 180px;
     }
-    #video video {
-        width: 360px;
-        height: 200px;
-    }
-    #footer .col-md-4,
-    #footer .col-md-5,
-    #footer .col-md-3 {
-        margin-left: 5px;
-        margin-top: 30px;
-    }
-    .join-us .col-md-2 {
-        margin-top: 50px;
-    }
     .pengrajin img {
         width: 170px;
         height: 100px;

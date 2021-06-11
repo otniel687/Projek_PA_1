@@ -139,7 +139,7 @@
     </div>
     <div class="col-md-3 d-flex justify-content-center">
       <div>
-        <label><h4>Contact Us</h4></label><br>
+        <label><h4>Hubungi Kami</h4></label><br>
         <div class="form-group mt-3">
             <label><i class="fab fa-whatsapp"></i> Whatsapp</label>
             <input type="text" name="kritik" class="form-control" value="" autocomplete="off" placeholder="+62822-7389-6001" disabled>

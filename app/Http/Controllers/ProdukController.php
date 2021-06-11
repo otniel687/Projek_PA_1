@@ -11,7 +11,7 @@ class ProdukController extends Controller
     //
     public  function index()
     {
-        $header = Desa::find(16);
+        $header = Desa::find(15);
         $produk = DB::table('produk')->get();
         $ulos = DB::table('produk')->get();
         return view('produk.index', [

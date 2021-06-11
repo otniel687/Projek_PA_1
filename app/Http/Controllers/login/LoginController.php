@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function index(){
-        $web = Desa::find(18);
+        $web = Desa::find(17);
         $logo = Desa::find(14);
         return view('login',[
             'web'=>$web,

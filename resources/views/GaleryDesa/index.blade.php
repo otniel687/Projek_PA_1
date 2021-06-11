@@ -36,8 +36,8 @@
     <div class="row card bg-light m-5">
             <h2>NB:</h2><br>
             <p>
-                1. Untuk halaman Data Web hanya bisa melakukan Edit Data. <br>
-                2. Untuk halaman Informasi Tentang Desa (No. 1 - 4) div class="read-more" dan selanjutnya harus tetap menggunakan class tersebut agar tampilan nya tidak rusak. 
+                1. Untuk halaman Galeri hanya bisa melakukan Edit Data. <br>
+                2. Gambar tidak boleh lebih dari 3 MB. 
             </p>
         </div>
     </div>

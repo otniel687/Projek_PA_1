@@ -117,7 +117,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <p>Sumber : https://budaya-indonesia.org/Proses-Pembuatan-Ulos</p>
+        <p>Sumber : {{ $penjelasan->sumber}}</p>
       </div>
     </div>
   </div>
