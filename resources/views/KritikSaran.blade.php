@@ -83,8 +83,7 @@
       }
     </style>
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-6">
+            <div class="col">
               <div class="container card rounded" class="hero rounded-3 px-5 pb-5 pt-5">
                   <br>
                   <form enctype="multipart/form-data" action="/kritik/simpan" method="post">

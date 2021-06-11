@@ -19,9 +19,9 @@
 </section>
 @endsection
 @section('footer')
-<section id="footer" class="bg-dark text-light">
+<section id="footer" class="bg-dark text-light ">
     <div class="container">
-    <div class="row footer-jarak" >
+    <div class="row footer-jarak mt-5" >
       <div class="col-md-5 " style="color: cornflowerblue; size:'7';">
         <font size='7'><p>Website UMKM Ulos Desa Lumban Suhi Suhi Toruan</p></font>
       </div>
